@@ -99,7 +99,7 @@ import {User, Users, Clock, PencilRuler, ChevronRight, ChevronLeft} from "lucide
 import {games} from "@/data/games";
 import {useRoute} from "vue-router";
 import type {IGame} from "@/models/IGame";
-import {computed, ref} from "vue";
+import {computed, ref, watch} from "vue";
 
 const route = useRoute();
 const game = ref<IGame | null>(null);
@@ -114,6 +114,13 @@ const gameId = computed(() => route.params.id);
  */
 game.value = games.find(g => g.id === gameId.value) || null;
 
+/**
+ * scroll to top when route changes
+ */
+watch(gameId, () => {
+  game.value = games.find(g => g.id === gameId.value) || null;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 
 </script>
 
