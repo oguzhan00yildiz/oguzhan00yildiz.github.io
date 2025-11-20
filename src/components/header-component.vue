@@ -6,11 +6,11 @@
       <div class="">
         <router-link to="/">
           <h1 class="text-3xl h-10 md:h-14 md:text-5xl text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text font-bold">
-            Oğuzhan Yıldız</h1>
+            Oguzhan Yildiz</h1>
         </router-link>
         <p class="text-sm md:text-lg text-primary ">Game Programmer</p>
       </div>
-      <!--    RIGT SIDE -->
+      <!--    RIGHT SIDE -->
       <div class="flex text-secondary items-center gap-2 md:gap-3">
         <a href="https://www.linkedin.com/in/oguzhan00yildiz/" target="_blank">
           <Linkedin class="size-8 md:size-10 hover:text-white transition-colors duration-150"/>

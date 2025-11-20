@@ -1,8 +1,8 @@
 <template>
-  <div class="group rounded-md overflow-hidden">
+  <div class="group rounded-lg overflow-hidden border border-gray-700 hover:border-secondary/50 shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
     <router-link :to="`/games/${game.id}`">
       <div class="relative flex flex-col">
-        <img :src="game.src" alt="game_gif" class="w-full aspect-video md:saturate-50 md:group-hover:saturate-100"/>
+        <img :src="game.src" alt="game_gif" class="w-full aspect-video md:saturate-50 md:group-hover:saturate-100 transition-all duration-300"/>
         <!--      DETAILS-->
         <div
             class="flex items-center gap-6 justify-start px-5 absolute bottom-0 w-full bg-black bg-opacity-70 h-[15%] md:h-[20%] text-white">
@@ -27,10 +27,8 @@
         <div>
           <!--        TITLE-->
           <div class="flex items-center">
-            <h1 class="text-xl truncate font-semibold md:text-2xl text-secondary group-hover:text-white">{{
-                game.title
-                                                                                                         }}</h1>
-            <ChevronRight class="ml-auto text-secondary group-hover:text-white size-6 md:size-8"/>
+            <h1 class="text-xl truncate font-semibold md:text-2xl text-secondary group-hover:text-white transition-colors duration-300">{{ game.title }}</h1>
+            <ChevronRight class="ml-auto text-secondary group-hover:text-white size-6 md:size-8 transition-colors duration-300"/>
           </div>
           <!--        SUBTITLE-->
           <h2 class="truncate text-base md:text-lg">{{ game.subtitle }}</h2>
