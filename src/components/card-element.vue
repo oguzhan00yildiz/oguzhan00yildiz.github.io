@@ -2,7 +2,7 @@
   <div class="group rounded-lg overflow-hidden border border-gray-700 hover:border-secondary/50 shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
     <router-link :to="`/games/${game.id}`">
       <div class="relative flex flex-col">
-        <img :src="game.src" alt="game_gif" class="w-full aspect-video md:saturate-50 md:group-hover:saturate-100 transition-all duration-300"/>
+        <img :src="game.src" alt="game_gif" class="w-full aspect-video transition-all duration-300"/>
         <!--      DETAILS-->
         <div
             class="flex items-center gap-6 justify-start px-5 absolute bottom-0 w-full bg-black bg-opacity-70 h-[15%] md:h-[20%] text-white">

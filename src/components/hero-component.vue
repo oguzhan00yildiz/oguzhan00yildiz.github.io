@@ -1,19 +1,21 @@
 <template>
-  <div class="flex flex-col items-center gap-20 pt-8 relative md:justify-around">
-    <div class="flex-shrink-0 size-[200px] md:size-[240px] overflow-hidden ring-4 ring-secondary rounded-full">
+  <div class="flex flex-col md:flex-row items-center gap-8 pt-2 pb-6 relative md:gap-12">
+    <div class="flex-shrink-0 size-[140px] md:size-[180px] overflow-hidden ring-3 ring-secondary rounded-full">
       <button @click="handleImageClick">
         <img alt="avatar"
              ref="imageAvatar"
-             class="size-full object-cover transition-transform duration-200"
+             class="size-full object-cover transition-transform duration-200 scale-150 translate-y-6"
              src="/img/avatar.jpg">
       </button>
     </div>
-    <p
-      class="py-1 text-xl md:text-2xl xl:text-4xl text-center text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text font-light inline-block">
-      Game programmer. Studying at JAMK University in Finland to turn his hobby into a profession. Co-founder and QA-Test Lead
-       at the newly established Hovi Production. Enjoys working in organized settings, working hard, and being a flexible team player, handling challenges with humor.
-    </p>
-    <ChevronDown class="size-10 md:size-14 animate-bounce shrink-0" />
+    <div class="flex flex-col items-center md:items-start gap-4 flex-1">
+      <p
+        class="text-lg md:text-2xl text-center md:text-left text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text font-light">
+        Game Programmer with 5+ years of experience. Currently studying Game Production at JAMK University in Finland. Passionate about creating immersive gameplay experiences, solving complex technical challenges, and collaborating with creative teams. Always looking to push the boundaries of game development.
+      </p>
+      <ChevronDown class="size-6 md:size-8 animate-bounce shrink-0 md:hidden" />
+    </div>
+    <ChevronDown class="size-6 md:size-8 animate-bounce shrink-0 hidden md:block absolute bottom-0 left-1/2 -translate-x-1/2" />
   </div>
 </template>
 
