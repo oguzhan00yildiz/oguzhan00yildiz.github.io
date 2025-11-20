@@ -10,5 +10,6 @@ export interface IGame {
   engine: string;
   src: string;
   role: string;
+  status: "Shipped" | "Other";
   details: IDetails;
 }
