@@ -11,7 +11,7 @@
     <div class="flex flex-col items-center md:items-start gap-4 flex-1">
       <p
         class="text-lg md:text-2xl text-center md:text-left text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text font-light">
-        Game Programmer with 5+ years of experience. Currently studying Game Production at JAMK University in Finland. Passionate about creating immersive gameplay experiences, solving complex technical challenges, and collaborating with creative teams. Always looking to push the boundaries of game development.
+        Game Programmer with 5+ years of experience. Currently studying Game Production at JAMK University in Finland, with a strong focus on building high-quality gameplay and clean, reliable code.
       </p>
       <ChevronDown class="size-6 md:size-8 animate-bounce shrink-0 md:hidden" />
     </div>
