@@ -4,12 +4,9 @@
     <meta charset="utf-8">
     <title>Redirecting...</title>
     <script>
-      // GitHub Pages SPA redirect hack
-      // This script takes the current url and converts the path and query
-      // string into just a query string, and then redirects the browser
-      // to the new url with only a query string and hash fragment
-      var pathSegmentsToKeep = 0;
-
+      // GitHub Pages SPA redirect
+      var pathSegmentsToKeep = 0; // 0 for user/org page
+      
       var l = window.location;
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
