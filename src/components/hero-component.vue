@@ -11,7 +11,7 @@
     <div class="flex flex-col items-center md:items-start gap-4 flex-1">
       <p
         class="text-lg md:text-2xl text-center md:text-left text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text font-light">
-        Also known as Ossi, a Game Production student at JAMK University with 5+ years of game programming experience. Passionate about crafting immersive gameplay experiences and solving complex technical challenges.
+        Also known as Ossi, a Game Production student at JAMK University with 6+ years of game programming experience. Passionate about crafting immersive gameplay experiences and solving complex technical challenges.
       </p>
       <ChevronDown class="size-6 md:size-8 animate-bounce shrink-0 md:hidden" />
     </div>

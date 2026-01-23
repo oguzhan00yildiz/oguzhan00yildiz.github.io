@@ -21,14 +21,18 @@
         <div>
           <h2 class="text-secondary text-2xl md:text-3xl font-bold py-4">About Me</h2>
           <p class="text-gray-300 leading-relaxed">
-            Also known as Ossi, a Game Production student at JAMK University with 4+ years of game programming experience. Passionate about crafting immersive gameplay experiences and solving complex technical challenges.
+            My interest in games began at an early age with titles like Mario and later expanded through PC games such as GTA Vice City.
+
+I started developing games in 2019, creating early prototypes alongside programming courses. After graduating from an associate degree program in Turkey with a completed game project, I continued my studies in Finland to further develop my skills in game production. Over the years, I have worked on and published games across PC and mobile platforms, participated in small team projects during the pandemic, and later in 2025 co-founded a small company in Finland where we released a game on Steam. Toward the end of the same year, I also collaborated with another team to publish a Steam demo.
+
+Outside of development: I enjoy game jams, exploring new games with friends, and working on experimental projects.
           </p>
         </div>
       </div>
       
       <!-- Bottom Section -->
       <div class="border-t border-gray-700 pt-6 text-center">
-        <p class="text-gray-400 text-sm">© 2025 Oğuzhan Yıldız. All rights reserved. | Made with Vue.js & Tailwind CSS</p>
+        <p class="text-gray-400 text-sm">© 2026 All Rights Reserved Oguzhan Yildiz</p>
       </div>
     </div>
   </div>
