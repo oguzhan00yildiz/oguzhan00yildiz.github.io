@@ -4,8 +4,6 @@
     <HeroComponent/>
     <!--    MY PROJECTS-->
     <GamesComponent/>
-    <!--    EDUCATION -->
-    <EducationComponent/>
   </main>
 </template>
 
@@ -13,5 +11,4 @@
 <script lang="ts" setup>
 import HeroComponent from "@/components/hero-component.vue";
 import GamesComponent from "@/components/games-component.vue";
-import EducationComponent from "@/components/education-component.vue";
 </script>

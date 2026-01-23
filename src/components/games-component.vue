@@ -14,6 +14,9 @@
       </div>
     </div>
 
+    <!--    EDUCATION SECTION-->
+    <EducationComponent/>
+
     <!--    OTHER PRODUCTS SECTION-->
     <div v-if="otherGames.length > 0" class="animate-fadeIn">
       <button
@@ -39,12 +42,13 @@
 
 <script lang="ts" setup>
 import CardElement from "@/components/card-element.vue";
+import EducationComponent from "@/components/education-component.vue";
 import {games} from "@/data/games";
 import {computed, ref} from "vue";
 
 const shippedGames = computed(() => games.filter(game => game.status === "Shipped"));
 const otherGames = computed(() => games.filter(game => game.status === "Other"));
-const showOtherProjects = ref(false);
+const showOtherProjects = ref(true);
 
 </script>
 

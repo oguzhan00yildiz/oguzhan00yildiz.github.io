@@ -3,7 +3,7 @@
 This is a personal portfolio website built using **Vue.js** and styled with **Tailwind CSS**. It showcases projects, skills, and a brief introduction about the owner.
 
 ## Demo  
-Check out the live version of the portfolio here: [Portfolio Website](https://oguzhan00yildiz.github.io/portfolio/#/).
+Check out the live version of the portfolio here: [Portfolio Website](https://oguzhan00yildiz.github.io).
 
 ## Features  
 - **Responsive Design**: Fully optimized for both desktop and mobile devices.  
