@@ -15,6 +15,9 @@
             <a href="https://github.com/oguzhan00yildiz" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-secondary/20 hover:bg-secondary/40 text-secondary rounded-lg transition-colors duration-300 hover:-translate-y-1 transition-all">
               <span>GitHub</span>
             </a>
+            <a href="mailto:oguzhan00yildiz@gmail.com" class="inline-flex items-center gap-2 px-4 py-2 bg-green-500/20 hover:bg-green-500/40 text-green-400 rounded-lg transition-colors duration-300 hover:-translate-y-1 transition-all">
+              <span>E-Mail To Me</span>
+            </a>
           </div>
         </div>
         <!-- Right Column -->
