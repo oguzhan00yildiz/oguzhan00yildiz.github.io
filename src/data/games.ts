@@ -2,6 +2,37 @@ import type {IGame} from "@/models/IGame";
 
 export const games: IGame[] = [
   {
+    id: "0",
+    title: "LabRATory",
+    subtitle: "Coming soon on Steam (Demo released)",
+    description: "Local Co-Op Puzzle-Platformer Game",
+    users: 6,
+    createdAt: "3 Months",
+    engine: "Unity C#",
+    src: "/gifs/labRATory.gif",
+    role: "Game Programmer / QA-Test Lead",
+    status: "Shipped",
+    details: {
+      about: "LabRATory is a co-op puzzle-platformer where two scientists are turned into the creatures they've been studying - RATS! Play as Edwin von Braun and Lila Redwood, each with their own unique abilities and a shared tail-connection mechanic.",
+      introduction: "I am one of the founding members of the Labratory project and was involved throughout the entire development process, from early prototyping to the Steam demo release. I worked as the Programmer Lead, taking responsibility for core gameplay systems, technical decision-making, and code quality. In addition to programming, I also supported the QA process by coordinating testing sessions and ensuring the game was stable and ready for the demo release.",
+      whatIWorkedOn: "🧠 Programmer Lead: Oversaw gameplay programming, system architecture, and technical decisions\n\n🎮 Player movement system (input handling, coyote time, ladders & climbing)\n\n🛠️ Moving platforms, conveyor lines (spline-based), switching platforms & pressure plates\n\n🧩 UI systems: Options menu (graphics & controls), pause menu, input rebinding\n\n💬 Popup message & interaction systems (iterated and refactored multiple times)\n\n🚀 Steamworks integration & Steam Remote Play testing\n\n🐞 Bug fixing, refactoring, and performance investigation\n\n🧪 Coordinated playtests, gathered feedback, and helped ensure build stability",
+      gifs: [
+        "/gifs/labRATory2.gif",
+        "/gifs/labRATory3.gif",
+      ],
+      whatILearned: "I learned multiplayer online programming, effective project planning, and how to ensure quality within a large-scale project. Additionally, I gained experience in managing testing sessions and improving the overall game performance.",
+      gifsFooter: [
+        "/gifs/labRATory4.gif",
+        "/gifs/labRATory5.gif",
+      ],
+      link: {
+        title: "",
+        url: "https://store.steampowered.com/app/4078280/LabRATory/",
+      },
+      imageSrc: "/img/steam.png",
+    },
+  },
+   {
     id: "1",
     title: "Slug Wars",
     subtitle: "Published on Steam Q1 2025 ",
@@ -31,6 +62,7 @@ export const games: IGame[] = [
       imageSrc: "/img/steam.png",
     },
   },
+
   {
     id: "2",
     title: "Gun Merge Master",

@@ -70,6 +70,12 @@
         <p class="text-sm md:text-base">{{ game.details.introduction }}</p>
       </div>
 
+      <!--    WHAT I WORKED ON-->
+      <div v-if="game.details.whatIWorkedOn">
+        <h2 class="text-white text-xl md:text-2xl font-bold py-4">What I worked on</h2>
+        <p class="text-sm md:text-base whitespace-pre-line">{{ game.details.whatIWorkedOn }}</p>
+      </div>
+
       <!--    GIFS-->
       <div v-if="game.details.gifs.length"
            :class="`grid grid-cols-1 md:grid-cols-3 grid-flow-row auto-rows-fr gap-4`">
