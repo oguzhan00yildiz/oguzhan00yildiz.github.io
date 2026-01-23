@@ -1,6 +1,7 @@
 export interface IDetails {
   about: string,
   introduction: string,
+  titleImage?: string,
   whatIWorkedOn?: string,
   gifs: string[]
   whatILearned: string,
