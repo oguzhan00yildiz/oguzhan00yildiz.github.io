@@ -14,14 +14,14 @@ export const games: IGame[] = [
     status: "Shipped",
     details: {
       about: "LabRATory is a co-op puzzle-platformer where two scientists are turned into the creatures they've been studying - RATS! Play as Edwin von Braun and Lila Redwood, each with their own unique abilities and a shared tail-connection mechanic.",
-      introduction: "I am one of the founding members of the Labratory project and was involved throughout the entire development process, from early prototyping to the Steam demo release. I worked as the Programmer Lead, taking responsibility for core gameplay systems, technical decision-making, and code quality. In addition to programming, I also supported the QA process by coordinating testing sessions and ensuring the game was stable and ready for the demo release.",
+      introduction: "I am one of the <strong>founding members</strong> of the Labratory project and was involved throughout the <strong>entire development process</strong>, from early prototyping to the <strong>Steam demo release</strong>. I worked as the <strong>Programmer Lead</strong>, taking responsibility for <strong>core gameplay systems</strong>, <strong>technical decision-making</strong>, and <strong>code quality</strong>. In addition to programming, I also supported the <strong>QA process</strong> by coordinating testing sessions and ensuring the game was stable and ready for the demo release.",
       titleImage: "/img/labRAToryTitle.jpg",
-      whatIWorkedOn: "🧠 Programmer Lead: Oversaw gameplay programming, system architecture, and technical decisions\n\n🎮 Player movement system (input handling, coyote time, ladders & climbing)\n\n🛠️ Moving platforms, conveyor lines (spline-based), switching platforms & pressure plates\n\n🧩 UI systems: Options menu (graphics & controls), pause menu, input rebinding\n\n💬 Popup message & interaction systems (iterated and refactored multiple times)\n\n🚀 Steamworks integration & Steam Remote Play testing\n\n🐞 Bug fixing, refactoring, and performance investigation\n\n🧪 Coordinated playtests, gathered feedback, and helped ensure build stability",
+      whatIWorkedOn: "• <strong>Programmer Lead:</strong> Oversaw <strong>gameplay programming</strong>, <strong>system architecture</strong>, and <strong>technical decisions</strong>\n\n• <strong>Player movement system</strong> (input handling, coyote time, ladders & climbing)\n\n• <strong>Moving platforms</strong>, <strong>conveyor lines</strong> (spline-based), <strong>switching platforms</strong> & <strong>pressure plates</strong>\n\n• <strong>UI systems:</strong> Options menu (graphics & controls), pause menu, input rebinding\n\n• <strong>Popup message</strong> & <strong>interaction systems</strong> (iterated and refactored multiple times)\n\n• <strong>Steamworks integration</strong> & <strong>Steam Remote Play</strong> testing\n\n• <strong>Bug fixing</strong>, <strong>refactoring</strong>, and <strong>performance investigation</strong>\n\n• Coordinated <strong>playtests</strong>, gathered feedback, and helped ensure <strong>build stability</strong>",
       gifs: [
         "/gifs/labRATory2.gif",
         "/gifs/labRATory3.gif",
       ],
-      whatILearned: "🧠 Leading programming tasks in a team-based game project\n\n🎮 Designing and polishing gameplay mechanics through iteration\n\n🧩 Building scalable UI and settings systems\n\n🧪 Keeping a project stable through structured testing and feedback\n\n🚀 Preparing a game for demos, public testing, and Steam distribution",
+      whatILearned: "• <strong>Leading programming tasks</strong> in a team-based game project\n\n• <strong>Designing</strong> and <strong>polishing gameplay mechanics</strong> through iteration\n\n• Building <strong>scalable UI</strong> and <strong>settings systems</strong>\n\n• Keeping a project stable through <strong>structured testing</strong> and <strong>feedback</strong>\n\n• Preparing a game for <strong>demos</strong>, <strong>public testing</strong>, and <strong>Steam distribution</strong>",
       gifsFooter: [
         "/gifs/labRATory4.gif",
         "/gifs/labRATory5.gif",
@@ -46,12 +46,12 @@ export const games: IGame[] = [
     status: "Shipped",
     details: {
       about: "Slug Wars is a fun, underwater multiplayer shooter where players battle as customizable sea slugs, using power-ups and strategy to dominate vibrant arenas.",
-      introduction: "I am one of the founding members of this project, and I was involved in every aspect, from the initial stages to its release on Steam. My primary role was as a programmer, handling various programming tasks. Additionally, I served as the QA-TEST Lead for the project, organizing multiple testing sessions and ensuring the game's quality before its release on Steam. Alongside this game, we established Hovi Production, which now operates as an official company based in Jyväskylä, Finland.",
+      introduction: "I am one of the <strong>founding members</strong> of this project, and I was involved in every aspect, from the initial stages to its <strong>release on Steam</strong>. My primary role was as a <strong>programmer</strong>, handling various programming tasks. Additionally, I served as the <strong>QA-TEST Lead</strong> for the project, organizing multiple testing sessions and ensuring the game's quality before its release on Steam. Alongside this game, we established <strong>Hovi Production</strong>, which now operates as an official company based in Jyväskylä, Finland.",
       gifs: [
         "/gifs/slug2.gif",
         "/gifs/slug3.gif",
       ],
-      whatILearned: "I learned multiplayer online programming, effective project planning, and how to ensure quality within a large-scale project. Additionally, I gained experience in managing testing sessions and improving the overall game performance.",
+      whatILearned: "I learned <strong>multiplayer online programming</strong>, <strong>effective project planning</strong>, and how to ensure quality within a <strong>large-scale project</strong>. Additionally, I gained experience in <strong>managing testing sessions</strong> and improving the overall <strong>game performance</strong>.",
       gifsFooter: [
         "/gifs/slug4.gif",
         "/gifs/slug5.gif",
@@ -77,11 +77,11 @@ export const games: IGame[] = [
     status: "Shipped",
     details: {
       about: "Gun Merge Master is a fast-paced, hyper-casual 3D mobile game where players defeat enemies and merge weapons to create powerful upgrades, progressing through challenging levels with engaging mechanics.",
-      introduction: "I played a key role in the creation of Gun Merge Master, contributing to its design, gameplay mechanics, and overall development process. From initial concept to release, I ensured the game's merging system and combat mechanics were polished and engaging for players. This project reflects my dedication to delivering fun and accessible gaming experiences in the hyper-casual genre.",
+      introduction: "I played a <strong>key role</strong> in the creation of Gun Merge Master, contributing to its design, gameplay mechanics, and overall development process. From <strong>initial concept to release</strong>, I ensured the game's merging system and combat mechanics were polished and engaging for players. This project reflects my dedication to delivering fun and accessible gaming experiences in the hyper-casual genre.",
       gifs: [
         "/gifs/Gunmergemaster.gif",
       ],
-      whatILearned: "With this project, we earned the opportunity to collaborate with GameFactory in Turkey after a long six-month competition and winning period. Following the development of dozens of clone hyper-casual games, Gun Merge Master became our first fully original game concept. I managed the entire project while also designing and programming its core mechanics, which allowed me to refine my skills in both leadership and technical development. This experience was a significant milestone in my career and a testament to our team's ability to create innovative and engaging content.",
+      whatILearned: "With this project, we earned the opportunity to collaborate with <strong>GameFactory in Turkey</strong> after a long <strong>six-month competition</strong> and winning period. Following the development of dozens of clone hyper-casual games, Gun Merge Master became our <strong>first fully original game concept</strong>. I <strong>managed the entire project</strong> while also designing and programming its <strong>core mechanics</strong>, which allowed me to refine my skills in both <strong>leadership</strong> and <strong>technical development</strong>. This experience was a <strong>significant milestone</strong> in my career and a testament to our team's ability to create innovative and engaging content.",
       gifsFooter: [
         
       ],
