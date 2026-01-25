@@ -74,6 +74,31 @@ export const games: IGame[] = [
     details: {
       about: "Slug Wars is a fun, underwater multiplayer shooter where players battle as customizable sea slugs, using power-ups and strategy to dominate vibrant arenas.",
       introduction: "I am one of the <strong>founding members</strong> of this project, and I was involved in every aspect, from the initial stages to its <strong>release on Steam</strong>. My primary role was as a <strong>programmer</strong>, handling various programming tasks. Additionally, I served as the <strong>QA-TEST Lead</strong> for the project, organizing multiple testing sessions and ensuring the game's quality before its release on Steam. Alongside this game, we established <strong>Hovi Production</strong>, which now operates as an official company based in Jyväskylä, Finland.",
+      workCategories: [
+        {
+          category: "Programming",
+          items: [
+            "<strong>Multiplayer online</strong> game programming",
+            "Various gameplay systems and mechanics",
+            "Game <strong>performance optimization</strong>",
+          ]
+        },
+        {
+          category: "Quality Assurance",
+          items: [
+            "Served as <strong>QA-Test Lead</strong> for the project",
+            "Organized and managed multiple <strong>testing sessions</strong>",
+            "Ensured game quality and stability before <strong>Steam release</strong>",
+          ]
+        },
+        {
+          category: "Project & Business",
+          items: [
+            "Involved in all stages from initial development to release",
+            "Co-founded <strong>Hovi Production</strong> company in Jyväskylä, Finland",
+          ]
+        },
+      ],
       gifs: [
         "/gifs/slug2.gif",
         "/gifs/slug3.gif",
@@ -105,6 +130,24 @@ export const games: IGame[] = [
     details: {
       about: "Gun Merge Master is a fast-paced, hyper-casual 3D mobile game where players defeat enemies and merge weapons to create powerful upgrades, progressing through challenging levels with engaging mechanics.",
       introduction: "I played a <strong>key role</strong> in the creation of Gun Merge Master, contributing to its design, gameplay mechanics, and overall development process. From <strong>initial concept to release</strong>, I ensured the game's merging system and combat mechanics were polished and engaging for players. This project reflects my dedication to delivering fun and accessible gaming experiences in the hyper-casual genre.",
+      workCategories: [
+        {
+          category: "Gameplay Systems",
+          items: [
+            "Designed and programmed the <strong>merging system</strong>",
+            "Implemented <strong>combat mechanics</strong> and enemy interactions",
+            "Level progression and difficulty balancing",
+          ]
+        },
+        {
+          category: "Project Management",
+          items: [
+            "<strong>Managed the entire project</strong> from concept to release",
+            "Collaborated with <strong>GameFactory Turkey</strong> after winning a 6-month competition",
+            "First <strong>fully original game concept</strong> after developing clone games",
+          ]
+        },
+      ],
       gifs: [
         "/gifs/Gunmergemaster.gif",
       ],
@@ -134,6 +177,24 @@ export const games: IGame[] = [
     details: {
       about: "Maiden Mystery is an interactive web-based puzzle game where players needs to walk in the Jyväskylä city and solve riddles and uncover clues to unravel the mystery of a missing person. With engaging puzzles and a captivating storyline, this game offers a unique and immersive experience for players of all ages.",
       introduction: "Maiden Mystery was created as part of a collaboration with Jyvälän Setlementti, a local organization in Jyväskylä, Finland. The game leaded players to a mystery room after each game. In this project, I served as a game programmer and publisher, contributing to the game's mechanics, controls, and overall design. The result was an interactive and engaging experience that showcased our team's creativity and storytelling abilities.",
+      workCategories: [
+        {
+          category: "Development",
+          items: [
+            "Game mechanics and <strong>puzzle systems</strong>",
+            "Player controls and <strong>interaction systems</strong>",
+            "Overall game design and flow",
+          ]
+        },
+        {
+          category: "Technical",
+          items: [
+            "<strong>Web-GL</strong> optimization for web-based platforms",
+            "Ensured smooth performance across browsers",
+            "<strong>Published</strong> and deployed the game",
+          ]
+        },
+      ],
       gifs: [
         "/gifs/maidenmystery.gif",
       ],
@@ -163,6 +224,23 @@ export const games: IGame[] = [
     details: {
       about: "Halloween Madness is a Game-Jam project where players need to survive from monsters through the halloween night. With Plants vs Zombies mechanics, this game offers a lighthearted and entertaining experience for players of all ages.",
       introduction: "Halloween Madness was created as part of the BIT-Jam, a 48-hour event that challenges developers to create a game based on a specific theme. In this project, I worked as a game programmer, contributing to the game's mechanics, controls, and overall design. The result was a unique and engaging experience that showcased our team's creativity and collaboration.",
+      workCategories: [
+        {
+          category: "Gameplay Programming",
+          items: [
+            "Implemented <strong>Plants vs Zombies</strong> style defense mechanics",
+            "Monster spawning and AI behavior",
+            "Player controls and game flow",
+          ]
+        },
+        {
+          category: "Development Process",
+          items: [
+            "Wrote <strong>optimized and clean code</strong> under 48-hour constraint",
+            "Systematic planning and execution with the team",
+          ]
+        },
+      ],
       gifs: [
         "/gifs/halloweenmadness.gif",
       ],
@@ -192,6 +270,23 @@ export const games: IGame[] = [
     details: {
       about: "Hissi Poika Simulator is a 2D game where players take on the role of a skilift operator and manage the skilifts to ensure the satisfaction of the customers.",
       introduction: "Hissi Poika Simulator was created as part of a Game Jam, I worked as a game programmer, contributing to the game's mechanics and controls. Me and my friends were happy with the result.",
+      workCategories: [
+        {
+          category: "Gameplay Programming",
+          items: [
+            "Skilift management mechanics",
+            "Customer satisfaction system",
+            "Player controls and interactions",
+          ]
+        },
+        {
+          category: "Technical Learning",
+          items: [
+            "First experience with <strong>Godot Engine</strong>",
+            "Learned <strong>GDScript</strong> programming language",
+          ]
+        },
+      ],
       gifs: [
         "/gifs/hissipoika.gif",
       ],
@@ -222,6 +317,24 @@ export const games: IGame[] = [
     details: {
       about: "Royal Banter is a fun and quirky 2D game where players complete missions to make the king laugh. With a variety of humorous tasks and challenges, this game offers a lighthearted and entertaining experience for players of all ages.",
       introduction: "Royal Banter was created as part of the Global Game Jam, a 48-hour event that challenges developers to create a game based on a specific theme. In this project, I worked as a game programmer, contributing to the game's mechanics, controls, and overall design. The result was a unique and engaging experience that showcased our team's creativity and collaboration.",
+      workCategories: [
+        {
+          category: "Gameplay Programming",
+          items: [
+            "Mission-based gameplay mechanics",
+            "Character controls and interactions",
+            "Game flow and progression systems",
+          ]
+        },
+        {
+          category: "Game Jam Experience",
+          items: [
+            "Rapid prototyping under <strong>48-hour deadline</strong>",
+            "Collaborative development with diverse team",
+            "Creative problem-solving and iteration",
+          ]
+        },
+      ],
       gifs: [
         "/gifs/Royalbanter.gif",
       ],
@@ -251,6 +364,24 @@ export const games: IGame[] = [
     details: {
       about: "Count Masters is a fast-paced, hyper-casual 3D mobile game where players compete in exciting battles, using unique characters and abilities to outsmart their opponents and claim victory.",
       introduction: "Count Masters was developed as part of a qualification process for Game Factory Kuluçka, a game development program in Turkey. In this project, I contributed to the game's design, programming, and overall development process, ensuring that the gameplay mechanics and controls were engaging and intuitive for players. This project reflects my passion for creating fun and accessible gaming experiences in the hyper-casual genre.",
+      workCategories: [
+        {
+          category: "Gameplay Systems",
+          items: [
+            "Crowd control and multiplication mechanics",
+            "Battle and combat systems",
+            "Level design and progression",
+          ]
+        },
+        {
+          category: "Development",
+          items: [
+            "<strong>Rapid prototyping</strong> for competition requirements",
+            "User testing and iteration",
+            "Mobile-optimized controls and UI",
+          ]
+        },
+      ],
       gifs: [
         "/gifs/Clonemaster.gif",
       ],
@@ -279,6 +410,23 @@ export const games: IGame[] = [
     details: {
       about: "Spin of the Hill is a challenging 3D base defense game where players must protect their MonaLisa from waves of enemies using tornado abilty.",
       introduction: "Spin of the Hill was developed as part of a sprint week project at JAMK University of Applied Sciences, where students work together to create a game prototype within a limited timeframe. In this project, I served as a game programmer, contributing to the game's mechanics, controls, and overall design. The result was a unique and engaging experience that showcased our team's creativity and collaboration.",
+      workCategories: [
+        {
+          category: "Gameplay Programming",
+          items: [
+            "<strong>Tornado ability</strong> mechanics and physics",
+            "Base defense and enemy wave systems",
+            "Player controls and interactions",
+          ]
+        },
+        {
+          category: "Development Process",
+          items: [
+            "Prototype development within <strong>1-week sprint</strong>",
+            "Collaborative team development",
+          ]
+        },
+      ],
       gifs: [
         "/gifs/Spinofthehill.gif",
       ],
@@ -307,6 +455,23 @@ export const games: IGame[] = [
     details: {
       about: "Slice It All is a fast-paced, hyper-casual 3D mobile game where players slice through objects to clear the path and reach the finish line, using precision and timing to achieve high scores and unlock new levels.",
       introduction: "Slice It All was developed as part of a collaboration with Game Factory Kuluçka, a game development program in Turkey. In this project, I contributed to the game's design, programming, and overall development process, ensuring that the slicing mechanics and level design were engaging and challenging for players. This project reflects my commitment to creating fun and accessible gaming experiences in the hyper-casual genre.",
+      workCategories: [
+        {
+          category: "Gameplay Systems",
+          items: [
+            "<strong>Slicing mechanics</strong> with precise physics",
+            "Object destruction and cutting systems",
+            "Level design and obstacle placement",
+          ]
+        },
+        {
+          category: "Technical Implementation",
+          items: [
+            "Replicated <strong>highly specific mechanics</strong> per jury requirements",
+            "Mobile-optimized performance",
+          ]
+        },
+      ],
       gifs: [
         "/gifs/Sliceitall.gif",
       ],
@@ -336,6 +501,23 @@ export const games: IGame[] = [
     details: {
       about: "Cure Bot is a story-driven puzzle game where players guide a robot named EVOC-004 through a series of challenging levels, using logic and problem-solving skills to overcome obstacles and complete the journey.",
       introduction: "Cure Bot was created as part of the EXPA Game Jam, a 48-hour event that challenges developers to create a game based on a specific theme. In this project, I worked as a game programmer, contributing to the game's mechanics, controls, and overall design. The result was a unique and engaging experience that showcased our team's creativity and collaboration.",
+      workCategories: [
+        {
+          category: "Gameplay Programming",
+          items: [
+            "<strong>Puzzle mechanics</strong> and logic systems",
+            "Robot character controls (EVOC-004)",
+            "Level progression and obstacles",
+          ]
+        },
+        {
+          category: "Game Jam Development",
+          items: [
+            "Story-driven gameplay implementation",
+            "Rapid prototyping under <strong>48-hour deadline</strong>",
+          ]
+        },
+      ],
       gifs: [
         "/gifs/Curebot.gif",
       ],
@@ -364,6 +546,23 @@ export const games: IGame[] = [
     details: {
       about: "Mob Control is a fast-paced, hyper-casual 3D mobile game where players control a mob of characters, navigating through challenging levels and obstacles to reach the finish line and achieve high scores.",
       introduction: "Mob Control was developed as part of a collaboration with Game Factory Kuluçka, a game development program in Turkey. In this project, I contributed to the game's design, programming, and overall development process, ensuring that the mob control mechanics and level design were engaging and challenging for players. This project reflects my dedication to creating fun and accessible gaming experiences in the hyper-casual genre.",
+      workCategories: [
+        {
+          category: "Gameplay Systems",
+          items: [
+            "<strong>Mob control</strong> and crowd mechanics",
+            "Strategic gameplay and pathfinding",
+            "Level design with increasing difficulty",
+          ]
+        },
+        {
+          category: "Optimization",
+          items: [
+            "<strong>Game performance optimization</strong>",
+            "Difficulty balancing for player satisfaction",
+          ]
+        },
+      ],
       gifs: [
         "/gifs/Mobcontrol.gif",
       ],
@@ -392,6 +591,23 @@ export const games: IGame[] = [
     details: {
       about: "Coffee Stack is a fast-paced, hyper-casual 3D mobile game where players stack coffee cups to create line, using precision and timing to reach new lengths and achieve high scores.",
       introduction: "Coffee Stack was developed as part of a collaboration with Game Factory Kuluçka, a game development program in Turkey. In this project, I contributed to the game's design, programming, and overall development process, ensuring that the stacking mechanics and level design were engaging and challenging for players. This project reflects my commitment to creating fun and accessible gaming experiences in the hyper-casual genre.",
+      workCategories: [
+        {
+          category: "Gameplay Systems",
+          items: [
+            "<strong>Stacking mechanics</strong> with precision timing",
+            "Cup collection and line formation systems",
+            "Score tracking and progression",
+          ]
+        },
+        {
+          category: "Level Design",
+          items: [
+            "Increasing difficulty and complexity",
+            "Obstacle placement and challenge balancing",
+          ]
+        },
+      ],
       gifs: [
         "/gifs/Coffeestack.gif",
       ],
@@ -420,6 +636,23 @@ export const games: IGame[] = [
     details: {
       about: "Pandora's Box is a challenging 2D rogue-like game where players explore a procedurally generated dungeon, battling enemies and collecting loot to unlock new abilities and progress through the levels.",
       introduction: "Pandora's Box was developed as part of a game programming course at JAMK University of Applied Sciences, where students work together to create a game prototype within a limited timeframe. In this project, I served as a game programmer, contributing to the game's mechanics, controls, and overall design. The result was a unique and engaging experience that showcased our team's creativity and collaboration.",
+      workCategories: [
+        {
+          category: "Gameplay Programming",
+          items: [
+            "<strong>Rogue-like</strong> gameplay mechanics",
+            "<strong>Procedurally generated</strong> dungeon systems",
+            "Enemy AI and combat systems",
+          ]
+        },
+        {
+          category: "Game Systems",
+          items: [
+            "Loot and ability unlock systems",
+            "Player progression and controls",
+          ]
+        },
+      ],
       gifs: [
         "/gifs/Pandorasbox.gif",
       ],
@@ -448,6 +681,23 @@ export const games: IGame[] = [
     details: {
       about: "Tall Man Run is a fast-paced, hyper-casual 3D mobile game where players control a Stickman character, dodging obstacles and collecting coins to reach the finish line while growing or loosing mess and achieve high scores.",
       introduction:"Tall Man Run was developed as part of a collaboration with Game Factory Kuluçka, a game development program in Turkey. In this project, I contributed to the game's design, programming, and overall development process, ensuring that the running and resizing mechanics and level design were engaging and challenging for players. This project reflects my dedication to creating fun and accessible gaming experiences in the hyper-casual genre.",
+      workCategories: [
+        {
+          category: "Gameplay Systems",
+          items: [
+            "<strong>Running and resizing</strong> character mechanics",
+            "Obstacle dodging and collision systems",
+            "Coin collection and scoring",
+          ]
+        },
+        {
+          category: "Level Design",
+          items: [
+            "Progressive difficulty and complexity",
+            "Reflex and coordination challenges",
+          ]
+        },
+      ],
       gifs: [
         "/gifs/Tallmanrun.gif",
       ],
@@ -476,6 +726,24 @@ export const games: IGame[] = [
     details: {
       about: "Atlas is a 2D tower build mobile game where players build towers to get the highest score and try to ensure the balance of the tower.",
       introduction: "Atlas was developed as part of a project to graduate from a vocational school, where students could choose their own project idea and work on it for a limited time. In this project, I went solo and made everything from scratch, including the game's mechanics, controls, and overall design and game's lore. The result was a unique and engaging experience that showcased my creativity and dedication to creating fun and challenging gaming experiences.",
+      workCategories: [
+        {
+          category: "Full Development (Solo)",
+          items: [
+            "<strong>Tower building</strong> mechanics and physics",
+            "Balance system and scoring",
+            "Player controls and interactions",
+          ]
+        },
+        {
+          category: "Design & Creative",
+          items: [
+            "Complete <strong>game design from scratch</strong>",
+            "Game lore and visual direction",
+            "UI/UX design for mobile",
+          ]
+        },
+      ],
       gifs:[
       "/gifs/Atlas.gif",
       ],
