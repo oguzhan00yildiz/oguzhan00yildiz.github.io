@@ -15,7 +15,7 @@
           <img :alt="game.title" :src="game.src" class="w-full aspect-video">
           <div
               class="flex items-center gap-6 justify-start px-5 absolute bottom-0 w-full bg-black bg-opacity-70 h-[15%] text-white">
-            <p class="text-xl md:text-3xl font-bold text-primary">
+            <p class="text-2xl md:text-4xl font-bold text-primary">
               {{ game.title }}
             </p>
           </div>
@@ -25,9 +25,9 @@
       <!--    ABOUT AND PROJECT INFO-->
       <div class="flex flex-col md:flex-row gap-3 md:gap-4">
         <!--      ABOUT-->
-        <div class="bg-card p-4 flex-1 space-y-4 rounded-md ">
-          <h2 class="text-xl md:text-3xl font-semibold md:my-4 text-primary">About</h2>
-          <p class="text-sm md:text-base">{{ game.details.about }}</p>
+        <div class="bg-card p-6 flex-1 space-y-4 rounded-md ">
+          <h2 class="text-2xl md:text-3xl font-semibold text-primary">About</h2>
+          <p class="text-base md:text-lg leading-relaxed">{{ game.details.about }}</p>
           <div class="link text-xs md:text-sm text-primary">
             <a :href="game.details?.link?.url" target="_blank" rel="noopener noreferrer">{{ game.details?.link?.title }} 
               <img :src="game.details.imageSrc" alt="" />  
@@ -35,27 +35,27 @@
         </div>
         </div>
         <!--      PROJECT INFO -->
-        <div class="bg-card p-4 flex-1 space-y-4 rounded-md">
-          <h2 class="text-xl md:text-3xl font-semibold md:my-4 text-primary">Project Info</h2>
+        <div class="bg-card p-6 flex-1 space-y-4 rounded-md">
+          <h2 class="text-2xl md:text-3xl font-semibold text-primary">Project Info</h2>
           <div class="flex flex-col gap-2 md:gap-4">
-            <ul class="space-y-2">
+            <ul class="space-y-3">
               <!--            ROLE-->
-              <li class="flex items-center gap-1 md:gap-3 text-sm md:text-base truncate">
+              <li class="flex items-center gap-1 md:gap-3 text-base md:text-lg truncate">
                 <User class="size-5 md:size-6"/>
                 Role : {{ game.role }}
               </li>
               <!--            TEAM SIZE-->
-              <li class="flex items-center gap-1 md:gap-3 text-sm md:text-base truncate">
+              <li class="flex items-center gap-1 md:gap-3 text-base md:text-lg truncate">
                 <Users class="size-5 md:size-6"/>
                 Team Size : {{ game.users }}
               </li>
               <!--            TIME FRAME-->
-              <li class="flex items-center gap-1 md:gap-3 text-sm md:text-base truncate">
+              <li class="flex items-center gap-1 md:gap-3 text-base md:text-lg truncate">
                 <Clock class="size-5 md:size-6"/>
                 Time frame : {{ game.createdAt }}
               </li>
               <!--            ENGINE-->
-              <li class="flex items-center gap-1 md:gap-3 text-sm md:text-base truncate">
+              <li class="flex items-center gap-1 md:gap-3 text-base md:text-lg truncate">
                 <PencilRuler class="size-5 md:size-6"/>
                 Engine : {{ game.engine }}
               </li>
@@ -65,9 +65,9 @@
       </div>
 
       <!--    INTRODUCTION-->
-      <div class="bg-card p-4 space-y-4 rounded-md">
-        <h2 class="text-xl md:text-3xl font-semibold md:my-4 text-primary">Introduction</h2>
-        <p class="text-sm md:text-base rich-content" v-html="game.details.introduction"></p>
+      <div class="bg-card p-6 space-y-6 rounded-md">
+        <h2 class="text-2xl md:text-3xl font-semibold text-primary">Introduction</h2>
+        <p class="text-base md:text-lg leading-relaxed rich-content" v-html="game.details.introduction"></p>
       </div>
 
       <!--    TITLE IMAGE-->
@@ -77,21 +77,21 @@
       </div>
 
       <!--    WHAT I WORKED ON-->
-      <div v-if="game.details.workCategories || game.details.whatIWorkedOn" class="bg-card p-4 space-y-4 rounded-md">
-        <h2 class="text-xl md:text-3xl font-semibold md:my-4 text-primary">What I worked on</h2>
+      <div v-if="game.details.workCategories || game.details.whatIWorkedOn" class="bg-card p-6 space-y-6 rounded-md">
+        <h2 class="text-2xl md:text-3xl font-semibold text-primary">What I worked on</h2>
         
         <!-- Categorized view -->
-        <div v-if="game.details.workCategories" class="space-y-4">
+        <div v-if="game.details.workCategories" class="space-y-6">
           <div v-for="workCategory in game.details.workCategories" :key="workCategory.category">
-            <h3 class="text-base md:text-lg font-semibold text-primary mb-2">{{ workCategory.category }}</h3>
+            <h3 class="text-lg md:text-xl font-semibold text-primary mb-3">{{ workCategory.category }}</h3>
             <ul class="space-y-2">
-              <li v-for="(item, index) in workCategory.items" :key="index" class="text-sm md:text-base rich-content ml-4 list-disc" v-html="`• ${item}`"></li>
+              <li v-for="(item, index) in workCategory.items" :key="index" class="text-base md:text-lg rich-content ml-4 list-disc leading-relaxed" v-html="item"></li>
             </ul>
           </div>
         </div>
         
         <!-- Fallback to original text format -->
-        <p v-else class="text-sm md:text-base whitespace-pre-line rich-content" v-html="game.details.whatIWorkedOn"></p>
+        <p v-else class="text-base md:text-lg leading-relaxed whitespace-pre-line rich-content" v-html="game.details.whatIWorkedOn"></p>
       </div>
 
       <!--    GIFS-->
@@ -101,9 +101,9 @@
       </div>
 
       <!--    WHAT I LEARNED-->
-      <div class="bg-card p-4 space-y-4 rounded-md">
-        <h2 class="text-xl md:text-3xl font-semibold md:my-4 text-primary">What I learned</h2>
-        <p class="text-sm md:text-base whitespace-pre-line rich-content" v-html="game.details.whatILearned"></p>
+      <div class="bg-card p-6 space-y-6 rounded-md">
+        <h2 class="text-2xl md:text-3xl font-semibold text-primary">What I learned</h2>
+        <p class="text-base md:text-lg leading-relaxed whitespace-pre-line rich-content" v-html="game.details.whatILearned"></p>
       </div>
 
 
