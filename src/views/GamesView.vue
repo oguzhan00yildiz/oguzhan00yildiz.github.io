@@ -67,7 +67,7 @@
       <!--    INTRODUCTION-->
       <div>
         <h2 class="text-white text-xl md:text-2xl font-bold py-4">Introduction</h2>
-        <p class="text-sm md:text-base" v-html="game.details.introduction"></p>
+        <p class="text-sm md:text-base rich-content" v-html="game.details.introduction"></p>
       </div>
 
       <!--    TITLE IMAGE-->
@@ -79,7 +79,7 @@
       <!--    WHAT I WORKED ON-->
       <div v-if="game.details.whatIWorkedOn">
         <h2 class="text-white text-xl md:text-2xl font-bold py-4">What I worked on</h2>
-        <p class="text-sm md:text-base whitespace-pre-line" v-html="game.details.whatIWorkedOn"></p>
+        <p class="text-sm md:text-base whitespace-pre-line rich-content" v-html="game.details.whatIWorkedOn"></p>
       </div>
 
       <!--    GIFS-->
@@ -91,7 +91,7 @@
       <!--    WHAT I LEARNED-->
       <div>
         <h2 class="text-white text-xl md:text-2xl font-bold py-4">What I learned</h2>
-        <p class="text-sm md:text-base whitespace-pre-line" v-html="game.details.whatILearned"></p>
+        <p class="text-sm md:text-base whitespace-pre-line rich-content" v-html="game.details.whatILearned"></p>
       </div>
 
 
