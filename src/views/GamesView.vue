@@ -84,7 +84,7 @@
 
       <!--    GIFS-->
       <div v-if="game.details.gifs.length"
-           :class="`grid grid-cols-1 md:grid-cols-3 grid-flow-row auto-rows-fr gap-4`">
+           :class="game.id === '0' ? 'grid grid-cols-1 md:grid-cols-2 grid-flow-row auto-rows-fr gap-4' : 'grid grid-cols-1 md:grid-cols-2 grid-flow-row auto-rows-fr gap-4'">
         <img v-for="gif in game.details.gifs" :src="gif" alt="game-gif" class="rounded-md w-full h-auto object-contain">
       </div>
 
@@ -97,7 +97,7 @@
 
       <!--    FOOTER GIFS-->
       <div
-          :class="`grid grid-cols-1 md:grid-cols-3 grid-flow-row auto-rows-fr gap-4`">
+          :class="game.id === '0' ? 'grid grid-cols-1 md:grid-cols-2 grid-flow-row auto-rows-fr gap-4' : 'grid grid-cols-1 md:grid-cols-2 grid-flow-row auto-rows-fr gap-4'">
         <img v-for="gif in game.details.gifsFooter" :src="gif" alt="game-gif"
              class="rounded-md w-full h-auto object-contain">
       </div>

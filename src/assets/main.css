@@ -2,9 +2,8 @@
 
 /* Rich content styling for v-html blocks */
 .rich-content strong {
-	color: rgb(96 165 250 / 1); /* tailwind sky-400 */
-	font-weight: 700;
-	padding: 0 0.15rem;
+  color: #ffffff; /* white */
+  font-weight: 700;
 	border-radius: 0.25rem;
 }
 
