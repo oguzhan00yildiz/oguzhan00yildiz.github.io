@@ -26,7 +26,7 @@
       <div class="flex flex-col md:flex-row gap-3 md:gap-4">
         <!--      ABOUT-->
         <div class="bg-card p-4 flex-1 space-y-4 rounded-md ">
-          <h2 class="text-lg md:text-2xl font-semibold md:my-4">About</h2>
+          <h2 class="text-xl md:text-3xl font-semibold md:my-4 text-primary">About</h2>
           <p class="text-sm md:text-base">{{ game.details.about }}</p>
           <div class="link text-xs md:text-sm text-primary">
             <a :href="game.details?.link?.url" target="_blank" rel="noopener noreferrer">{{ game.details?.link?.title }} 
@@ -36,7 +36,7 @@
         </div>
         <!--      PROJECT INFO -->
         <div class="bg-card p-4 flex-1 space-y-4 rounded-md">
-          <h2 class="text-lg md:text-2xl font-semibold md:my-4">Project Info</h2>
+          <h2 class="text-xl md:text-3xl font-semibold md:my-4 text-primary">Project Info</h2>
           <div class="flex flex-col gap-2 md:gap-4">
             <ul class="space-y-2">
               <!--            ROLE-->
@@ -66,7 +66,7 @@
 
       <!--    INTRODUCTION-->
       <div class="bg-card p-4 space-y-4 rounded-md">
-        <h2 class="text-lg md:text-2xl font-semibold md:my-4">Introduction</h2>
+        <h2 class="text-xl md:text-3xl font-semibold md:my-4 text-primary">Introduction</h2>
         <p class="text-sm md:text-base rich-content" v-html="game.details.introduction"></p>
       </div>
 
@@ -78,7 +78,7 @@
 
       <!--    WHAT I WORKED ON-->
       <div v-if="game.details.workCategories || game.details.whatIWorkedOn" class="bg-card p-4 space-y-4 rounded-md">
-        <h2 class="text-lg md:text-2xl font-semibold md:my-4">What I worked on</h2>
+        <h2 class="text-xl md:text-3xl font-semibold md:my-4 text-primary">What I worked on</h2>
         
         <!-- Categorized view -->
         <div v-if="game.details.workCategories" class="space-y-4">
@@ -102,7 +102,7 @@
 
       <!--    WHAT I LEARNED-->
       <div class="bg-card p-4 space-y-4 rounded-md">
-        <h2 class="text-lg md:text-2xl font-semibold md:my-4">What I learned</h2>
+        <h2 class="text-xl md:text-3xl font-semibold md:my-4 text-primary">What I learned</h2>
         <p class="text-sm md:text-base whitespace-pre-line rich-content" v-html="game.details.whatILearned"></p>
       </div>
 
