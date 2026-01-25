@@ -65,8 +65,8 @@
       </div>
 
       <!--    INTRODUCTION-->
-      <div>
-        <h2 class="text-white text-xl md:text-2xl font-bold py-4">Introduction</h2>
+      <div class="bg-card p-4 space-y-4 rounded-md">
+        <h2 class="text-lg md:text-2xl font-semibold md:my-4">Introduction</h2>
         <p class="text-sm md:text-base rich-content" v-html="game.details.introduction"></p>
       </div>
 
@@ -77,9 +77,21 @@
       </div>
 
       <!--    WHAT I WORKED ON-->
-      <div v-if="game.details.whatIWorkedOn">
-        <h2 class="text-white text-xl md:text-2xl font-bold py-4">What I worked on</h2>
-        <p class="text-sm md:text-base whitespace-pre-line rich-content" v-html="game.details.whatIWorkedOn"></p>
+      <div v-if="game.details.workCategories || game.details.whatIWorkedOn" class="bg-card p-4 space-y-4 rounded-md">
+        <h2 class="text-lg md:text-2xl font-semibold md:my-4">What I worked on</h2>
+        
+        <!-- Categorized view -->
+        <div v-if="game.details.workCategories" class="space-y-4">
+          <div v-for="workCategory in game.details.workCategories" :key="workCategory.category">
+            <h3 class="text-base md:text-lg font-semibold text-primary mb-2">{{ workCategory.category }}</h3>
+            <ul class="space-y-2">
+              <li v-for="(item, index) in workCategory.items" :key="index" class="text-sm md:text-base rich-content ml-4 list-disc" v-html="`• ${item}`"></li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Fallback to original text format -->
+        <p v-else class="text-sm md:text-base whitespace-pre-line rich-content" v-html="game.details.whatIWorkedOn"></p>
       </div>
 
       <!--    GIFS-->
@@ -89,8 +101,8 @@
       </div>
 
       <!--    WHAT I LEARNED-->
-      <div>
-        <h2 class="text-white text-xl md:text-2xl font-bold py-4">What I learned</h2>
+      <div class="bg-card p-4 space-y-4 rounded-md">
+        <h2 class="text-lg md:text-2xl font-semibold md:my-4">What I learned</h2>
         <p class="text-sm md:text-base whitespace-pre-line rich-content" v-html="game.details.whatILearned"></p>
       </div>
 

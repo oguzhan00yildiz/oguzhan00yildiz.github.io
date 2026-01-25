@@ -14,14 +14,41 @@ export const games: IGame[] = [
     status: "Shipped",
     details: {
       about: "LabRATory is a co-op puzzle-platformer where two scientists are turned into the creatures they've been studying - RATS! Play as Edwin von Braun and Lila Redwood, each with their own unique abilities and a shared tail-connection mechanic.",
-      introduction: "I am one of the <strong>founding members</strong> of the Labratory project and was involved throughout the <strong>entire development process</strong>, from early prototyping to the <strong>Steam demo release</strong>. I worked as the <strong>Programmer Lead</strong>, taking responsibility for <strong>core gameplay systems</strong>, <strong>technical decision-making</strong>, and <strong>code quality</strong>. In addition to programming, I also supported the <strong>QA process</strong> by coordinating testing sessions and ensuring the game was stable and ready for the demo release.",
+      introduction: "I am one of the founding members of the Labratory project and was involved throughout the entire development process, from early prototyping to the <strong>Steam demo release</strong>. I worked as the <strong>Programmer Lead</strong>, taking responsibility for core gameplay systems, technical decision-making, and code quality. In addition to programming, I also supported the QA process by coordinating testing sessions and ensuring the game was stable and ready for the demo release.",
       titleImage: "/img/labRAToryTitle.jpg",
-      whatIWorkedOn: "• <strong>Programmer Lead:</strong> Oversaw <strong>gameplay programming</strong>, <strong>system architecture</strong>, and <strong>technical decisions</strong>\n\n• <strong>Player movement system</strong> (input handling, coyote time, ladders & climbing)\n\n• <strong>Moving platforms</strong>, <strong>conveyor lines</strong> (spline-based), <strong>switching platforms</strong> & <strong>pressure plates</strong>\n\n• <strong>UI systems:</strong> Options menu (graphics & controls), pause menu, input rebinding\n\n• <strong>Popup message</strong> & <strong>interaction systems</strong> (iterated and refactored multiple times)\n\n• <strong>Steamworks integration</strong> & <strong>Steam Remote Play</strong> testing\n\n• <strong>Bug fixing</strong>, <strong>refactoring</strong>, and <strong>performance investigation</strong>\n\n• Coordinated <strong>playtests</strong>, gathered feedback, and helped ensure <strong>build stability</strong>",
+      workCategories: [
+        {
+          category: "Gameplay Systems",
+          items: [
+            "Oversaw gameplay programming, system architecture, and technical decisions",
+            "Player movement system (input handling, <strong>coyote time</strong>, ladders & climbing)",
+            "Moving platforms, conveyor lines (spline-based), switching platforms & pressure plates",
+            "UI systems: Options menu (graphics & controls), pause menu, <strong>input rebinding</strong>",
+            "Popup message & interaction systems",
+          ]
+        },
+        {
+          category: "Integration & Optimization",
+          items: [
+            "<strong>Steamworks</strong> integration & <strong>Steam Remote Play</strong> testing",
+            "Bug fixing and performance investigation",
+            "Refactoring core systems for code quality and maintainability",
+          ]
+        },
+        {
+          category: "Quality Assurance & Testing",
+          items: [
+            "Coordinated playtests and gathered feedback",
+            "Supporting the QA process throughout development",
+            "Ensured build stability and readiness for demo release",
+          ]
+        },
+      ],
       gifs: [
         "/gifs/labRATory2.gif",
         "/gifs/labRATory3.gif",
       ],
-      whatILearned: "• <strong>Leading programming tasks</strong> in a team-based game project\n\n• <strong>Designing</strong> and <strong>polishing gameplay mechanics</strong> through iteration\n\n• Building <strong>scalable UI</strong> and <strong>settings systems</strong>\n\n• Keeping a project stable through <strong>structured testing</strong> and <strong>feedback</strong>\n\n• Preparing a game for <strong>demos</strong>, <strong>public testing</strong>, and <strong>Steam distribution</strong>",
+      whatILearned: "• Leading programming tasks in a team-based game project\n\n• Designing and polishing gameplay mechanics through iteration\n\n• Building scalable UI and settings systems\n\n• Keeping a project stable through structured testing and feedback\n\n• Preparing a game for demos, public testing, and <strong>Steam distribution</strong>",
       gifsFooter: [
         "/gifs/labRATory4.gif",
         "/gifs/labRATory5.gif",
