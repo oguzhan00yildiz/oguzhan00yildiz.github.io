@@ -11,18 +11,18 @@
         <p class="text-sm md:text-lg text-primary ">Unity Developer | Game Programmer</p>
       </div>
       <!--    RIGHT SIDE -->
-      <div class="flex text-secondary items-center gap-2 md:gap-3 absolute right-4 top-4 md:static">
+      <div class="grid grid-cols-2 gap-2 text-secondary items-center absolute right-4 top-4 md:static md:flex md:gap-3">
         <a href="https://www.linkedin.com/in/oguzhan00yildiz/" target="_blank" aria-label="LinkedIn">
-          <i class="fa-brands fa-linkedin text-4xl md:text-5xl leading-none hover:text-white transition-colors duration-150"></i>
+          <i class="fa-brands fa-linkedin text-2xl md:text-5xl leading-none hover:text-white transition-colors duration-150"></i>
         </a>
         <a href="https://github.com/oguzhan00yildiz" target="_blank" aria-label="GitHub">
-          <i class="fa-brands fa-github text-4xl md:text-5xl leading-none hover:text-white transition-colors duration-150"></i>
+          <i class="fa-brands fa-github text-2xl md:text-5xl leading-none hover:text-white transition-colors duration-150"></i>
         </a>
         <a href="https://www.instagram.com/oguzhan0yildiz/" target="_blank" aria-label="Instagram">
-          <i class="fa-brands fa-instagram text-4xl md:text-5xl leading-none hover:text-white transition-colors duration-150"></i>
+          <i class="fa-brands fa-instagram text-2xl md:text-5xl leading-none hover:text-white transition-colors duration-150"></i>
         </a>
         <a href="https://oguzhan00yildiz.itch.io/" target="_blank" aria-label="Itch.io">
-          <i class="fa-brands fa-itch-io text-4xl md:text-5xl leading-none hover:text-white transition-colors duration-150"></i>
+          <i class="fa-brands fa-itch-io text-2xl md:text-5xl leading-none hover:text-white transition-colors duration-150"></i>
         </a>
       </div>
     </div>
