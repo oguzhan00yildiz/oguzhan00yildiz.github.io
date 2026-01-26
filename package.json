@@ -16,6 +16,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.1.0",
     "lucide-vue-next": "^0.474.0",
     "pinia": "^2.1.7",
     "vue": "^3.4.21",
