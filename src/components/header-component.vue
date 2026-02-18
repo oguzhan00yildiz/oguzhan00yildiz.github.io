@@ -8,7 +8,7 @@
           <h1 class="text-3xl h-10 md:h-14 md:text-5xl text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text font-bold">
             Oguzhan Yildiz</h1>
         </router-link>
-        <p class="text-sm md:text-lg text-primary ">Unity Developer | Game Programmer</p>
+        <p class="text-sm md:text-lg text-primary ">Game Programmer</p>
       </div>
       <!--    RIGHT SIDE -->
       <div class="grid grid-cols-2 gap-2 text-secondary items-center absolute right-4 top-4 md:static md:flex md:gap-3">
