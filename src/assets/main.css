@@ -16,4 +16,40 @@
 	list-style: disc;
 }
 
+/* Link styling for external platform logos */
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+.link a img {
+  max-width: 16rem;
+  width: auto;
+  height: auto;
+  padding: 0.375rem;
+  border-radius: 0.375rem;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .link a img {
+    max-width: 12rem;
+  }
+}
+
+.link a:hover img {
+  background-color: rgba(139, 197, 191, 0.2);
+  box-shadow: 0 0 8px rgba(139, 197, 191, 0.4);
+}
+
 
