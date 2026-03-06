@@ -16,36 +16,68 @@
       <!-- Skills Section -->
       <div class="grid grid-cols-2 md:grid-cols-3 gap-3 w-full mt-6">
         <!-- Languages Group -->
-        <div class="bg-card border border-primary/30 rounded-lg p-4 hover:border-primary/60 transition-colors">
-          <h3 class="text-primary font-medium text-sm mb-3 text-center">Languages</h3>
-          <div class="flex flex-wrap gap-2 justify-center">
-            <span class="bg-primary/20 text-primary text-xs px-2 py-1 rounded">C#</span>
-            <span class="bg-primary/20 text-primary text-xs px-2 py-1 rounded">C++</span>
-            <span class="bg-primary/20 text-primary text-xs px-2 py-1 rounded">Python</span>
+        <div class="bg-card border border-primary/30 rounded-lg px-3 py-2.5 hover:border-primary/60 transition-colors">
+          <h3 class="text-primary font-medium text-xs mb-2 text-center">Languages</h3>
+          <div class="flex flex-col gap-2">
+            <div class="skill-item">
+              <span class="text-white text-xs font-medium mb-1">C#</span>
+              <div class="skill-bar"><div class="skill-fill bg-primary" style="width: 100%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="text-white text-xs font-medium mb-1">C++</span>
+              <div class="skill-bar"><div class="skill-fill bg-primary" style="width: 30%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="text-white text-xs font-medium mb-1">Python</span>
+              <div class="skill-bar"><div class="skill-fill bg-primary" style="width: 30%"></div></div>
+            </div>
           </div>
         </div>
         
         <!-- Engines Group -->
-        <div class="bg-card border border-secondary/30 rounded-lg p-4 hover:border-secondary/60 transition-colors">
-          <h3 class="text-secondary font-medium text-sm mb-3 text-center">Engines</h3>
-          <div class="flex flex-wrap gap-2 justify-center">
-            <span class="bg-secondary/20 text-secondary text-xs px-2 py-1 rounded">Unity</span>
-            <span class="bg-secondary/20 text-secondary text-xs px-2 py-1 rounded">Unreal</span>
-            <span class="bg-secondary/20 text-secondary text-xs px-2 py-1 rounded">Godot</span>
+        <div class="bg-card border border-secondary/30 rounded-lg px-3 py-2.5 hover:border-secondary/60 transition-colors">
+          <h3 class="text-secondary font-medium text-xs mb-2 text-center">Engines</h3>
+          <div class="flex flex-col gap-2">
+            <div class="skill-item">
+              <span class="text-white text-xs font-medium mb-1">Unity</span>
+              <div class="skill-bar"><div class="skill-fill bg-secondary" style="width: 100%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="text-white text-xs font-medium mb-1">Unreal</span>
+              <div class="skill-bar"><div class="skill-fill bg-secondary" style="width: 70%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="text-white text-xs font-medium mb-1">Godot</span>
+              <div class="skill-bar"><div class="skill-fill bg-secondary" style="width: 30%"></div></div>
+            </div>
           </div>
         </div>
         
         <!-- Platforms Group - Centered on mobile -->
         <div class="col-span-2 md:col-span-1 flex justify-center">
-          <div class="bg-card border border-accent/30 rounded-lg p-4 hover:border-accent/60 transition-colors w-full">
-            <h3 class="text-accent font-medium text-sm mb-3 text-center">Platforms</h3>
-            <div class="flex flex-wrap gap-2 justify-center">
-              <span class="bg-accent/20 text-accent text-xs px-2 py-1 rounded">AR</span>
-              <span class="bg-accent/20 text-accent text-xs px-2 py-1 rounded">VR</span>
-              <span class="bg-accent/20 text-accent text-xs px-2 py-1 rounded">WebGL</span>
-              <span class="bg-accent/20 text-accent text-xs px-2 py-1 rounded">Mobile</span>
-              <span class="bg-accent/20 text-accent text-xs px-2 py-1 rounded">PC</span>
-              <span class="bg-accent/20 text-accent text-xs px-2 py-1 rounded">PS5</span>
+          <div class="bg-card border border-accent/30 rounded-lg px-3 py-2.5 hover:border-accent/60 transition-colors w-full">
+            <h3 class="text-accent font-medium text-xs mb-2 text-center">Platforms</h3>
+            <div class="grid grid-cols-2 gap-x-3 gap-y-2">
+              <div class="skill-item">
+                <span class="text-white text-xs font-medium mb-1">PC</span>
+                <div class="skill-bar"><div class="skill-fill bg-accent" style="width: 95%"></div></div>
+              </div>
+              <div class="skill-item">
+                <span class="text-white text-xs font-medium mb-1">Mobile</span>
+                <div class="skill-bar"><div class="skill-fill bg-accent" style="width: 95%"></div></div>
+              </div>
+              <div class="skill-item">
+                <span class="text-white text-xs font-medium mb-1">PS5</span>
+                <div class="skill-bar"><div class="skill-fill bg-accent" style="width: 30%"></div></div>
+              </div>
+              <div class="skill-item">
+                <span class="text-white text-xs font-medium mb-1">AR / VR</span>
+                <div class="skill-bar"><div class="skill-fill bg-accent" style="width: 30%"></div></div>
+              </div>
+              <div class="skill-item">
+                <span class="text-white text-xs font-medium mb-1">WebGL</span>
+                <div class="skill-bar"><div class="skill-fill bg-accent" style="width: 30%"></div></div>
+              </div>
             </div>
           </div>
         </div>
@@ -73,5 +105,22 @@ const handleImageClick = () => {
 </script>
 
 <style scoped>
+.skill-bar {
+  width: 100%;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 2px;
+  overflow: hidden;
+}
 
+.skill-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 1s ease-out;
+  opacity: 0.85;
+}
+
+.skill-item:hover .skill-fill {
+  opacity: 1;
+}
 </style>
