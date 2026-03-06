@@ -44,7 +44,7 @@
             </div>
             <div class="skill-item">
               <span class="text-white text-xs font-medium mb-1">Unreal</span>
-              <div class="skill-bar"><div class="skill-fill bg-secondary" style="width: 70%"></div></div>
+              <div class="skill-bar"><div class="skill-fill bg-secondary" style="width: 50%"></div></div>
             </div>
             <div class="skill-item">
               <span class="text-white text-xs font-medium mb-1">Godot</span>

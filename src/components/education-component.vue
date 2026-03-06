@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="education-section">
     <!--    TITLE-->
     <h2 class="text-transparent inline-block bg-gradient-to-r from-primary to-secondary bg-clip-text text-2xl md:text-3xl font-bold py-4">
       Education</h2>
