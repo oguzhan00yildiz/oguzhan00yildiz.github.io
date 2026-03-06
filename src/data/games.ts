@@ -164,7 +164,7 @@ export const games: IGame[] = [
   },
   
   {
-    id: "13",
+    id: "3",
     title: "Maiden Mystery / Kilpineidon Tarina",
     subtitle: "Made for Jyvälän Setlementti",
     description: "Web-GL based Interactive Puzzle Game",
@@ -173,7 +173,7 @@ export const games: IGame[] = [
     engine: "Unity C#",
     src: "/gifs/maidenmystery.gif",
     role: "Game Programmer / Publisher",
-    status: "Shipped",
+    status: "Other",
     details: {
       about: "Maiden Mystery is an interactive web-based puzzle game where players needs to walk in the Jyväskylä city and solve riddles and uncover clues to unravel the mystery of a missing person. With engaging puzzles and a captivating storyline, this game offers a unique and immersive experience for players of all ages.",
       introduction: "Maiden Mystery was created as part of a collaboration with Jyvälän Setlementti, a local organization in Jyväskylä, Finland. The game leaded players to a mystery room after each game. In this project, I served as a game programmer and publisher, contributing to the game's mechanics, controls, and overall design. The result was an interactive and engaging experience that showcased our team's creativity and storytelling abilities.",
@@ -211,7 +211,7 @@ export const games: IGame[] = [
   },
 
   {
-    id: "14",
+    id: "4",
     title: "Haloween Maddness",
     subtitle: "Do not let the monsters to get you",
     description: "#BIT-Jam Project 2D Game",
@@ -255,9 +255,66 @@ export const games: IGame[] = [
       imageSrc: "/img/itch.png",
     },
   },
+  {
+    id: "5",
+    title: "Desktop Garden",
+    subtitle: "Desktop Idle Game - RNG Orange",
+    description: "A desktop-overlay idle game where you nurture and grow plants",
+    users: 5,
+    createdAt: "1 Week",
+    engine: "Unity C#",
+    src: "https://img.itch.zone/aW1hZ2UvNDI3NTkxNi8yNTk3ODcwMC5wbmc=/original/tEMPx1.png",
+    role: "Lead Programmer / Product Owner",
+    status: "Other",
+    details: {
+      about: "Desktop Garden is a desktop-overlay idle game where you nurture and grow plants in real-time on your desktop. Care for various plant types using tools like fertilizers and water cans, harvest them, and unlock new varieties as you progress. The game grows quietly in the background while you work, gaining XP and currency to expand your garden.",
+      introduction: "As the Lead Programmer in RNG Orange team, I was responsible for implementing the core game logic and mechanics. Our 5-person team (Programming, Art, Art, Audio, Design/QA) collaborated to create Desktop Garden in just one week. The project taught us invaluable lessons about rapid prototyping, team coordination, and scope management. We focused on the essential core elements: 1-3 fully functional plants with visual feedback, 2 working tools, and a proper exit mechanism.",
+      titleImage: "/img/desktop-garden-cover.png",
+      workCategories: [
+        {
+          category: "Core Gameplay Systems",
+          items: [
+            "Plant growth and progression system with XP mechanics",
+            "Tool system (fertilizers, water cans, plant shears)",
+            "Inventory and pot management for simultaneous plant growth",
+            "Leveling system with plant tier unlocking",
+            "In-game currency and rewards system"
+          ]
+        },
+        {
+          category: "Technical Implementation",
+          items: [
+            "Desktop overlay integration with semi-transparent windows",
+            "Windows API integration for desktop widget functionality",
+            "Real-time plant state management",
+            "Save/load persistence system",
+            "UI systems and player interaction"
+          ]
+        },
+        {
+          category: "Team Collaboration (RNG Orange)",
+          items: [
+            "Oguzhan Yildiz - Programming (Lead)",
+            "Juuso Ronkainen - Art",
+            "Aleksi Juhola - Art",
+            "David Adeyinka - Audio",
+            "Dániel Simon - Design / QA"
+          ]
+        }
+      ],
+      gifs: [],
+      whatILearned: "This week-long project taught us three critical lessons: (1) For a prototype, focus on core mechanics—it doesn't need to be complete. (2) Teamwork and clear communication across diverse roles is essential. (3) Clear scope and well-defined roles keep things organized and productive. Technically, I gained valuable experience using Unity with Windows APIs to create semi-transparent desktop widgets, mastering desktop overlay integration and window management. This reinforced the value of rapid iteration and collaborative problem-solving under time constraints.",
+      gifsFooter: [],
+      link: {
+        title: "Play on itch.io",
+        url: "https://oguzhan00yildiz.itch.io/desktop-garden",
+      },
+      imageSrc: "/img/itch.png",
+    },
+  },
 
   {
-    id: "15",
+    id: "6",
     title: "Hissi Poika Simulator", 
     subtitle: "Take on the role of the best Hissipoika in Finland and manage the skilifts.",
     description: "#Godot Engine #GameJam 2D Game",
@@ -620,51 +677,6 @@ export const games: IGame[] = [
         url: "https://github.com/oguzhan00yildiz/Coffee-Stack-Clone",
       },
       imageSrc: "/img/github.png",
-    },
-  },
-  {
-    id: "10",
-    title: "Pandora`s Box",
-    subtitle: "For JAMK Game Programming course",
-    description: "Rouge-Like 2D Game",
-    users: 4,
-    createdAt: "10 Weeks",
-    engine: "Unity C#",
-    src: "/gifs/Pandorasbox.gif",
-    role: "Game Programmer",
-    status: "Other",
-    details: {
-      about: "Pandora's Box is a challenging 2D rogue-like game where players explore a procedurally generated dungeon, battling enemies and collecting loot to unlock new abilities and progress through the levels.",
-      introduction: "Pandora's Box was developed as part of a game programming course at JAMK University of Applied Sciences, where students work together to create a game prototype within a limited timeframe. In this project, I served as a game programmer, contributing to the game's mechanics, controls, and overall design. The result was a unique and engaging experience that showcased our team's creativity and collaboration.",
-      workCategories: [
-        {
-          category: "Gameplay Programming",
-          items: [
-            "<strong>Rogue-like</strong> gameplay mechanics",
-            "<strong>Procedurally generated</strong> dungeon systems",
-            "Enemy AI and combat systems",
-          ]
-        },
-        {
-          category: "Game Systems",
-          items: [
-            "Loot and ability unlock systems",
-            "Player progression and controls",
-          ]
-        },
-      ],
-      gifs: [
-        "/gifs/Pandorasbox.gif",
-      ],
-      whatILearned: "Participating in the game programming course was a valuable experience that allowed me to improve my skills in game programming, design, and project management.",
-      gifsFooter: [
-        
-      ],
-      link: {
-        title: "",
-        url: "",
-      },
-      imageSrc: "",
     },
   },
   {
