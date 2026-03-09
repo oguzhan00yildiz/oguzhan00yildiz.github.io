@@ -361,7 +361,7 @@ export const games: IGame[] = [
 
 
   {
-    id: "3",
+    id: "10",
     title: "Royal Banter Game-Jam Project",
     subtitle: "Play Missions for Making the King Laugh",
     description: "#GlobalGameJam 3D Game",
@@ -408,7 +408,7 @@ export const games: IGame[] = [
   },
 
   {
-    id: "4",
+    id: "13",
     title: "Count Masters (Clone)",
     subtitle: "For Game Factory Kuluçka Qualification",
     description: "Hyper-Casual 3D Mobile Game",
@@ -454,7 +454,7 @@ export const games: IGame[] = [
     },
   },
   {
-    id: "5",
+    id: "14",
     title: "Spin Of The Hill",
     subtitle: "For JAMK Sprint Week",
     description: "Base Defense 3D Game",
@@ -499,7 +499,7 @@ export const games: IGame[] = [
   },
 },
   {
-    id: "6",
+    id: "15",
     title: "Slice It All (Clone)",
     subtitle: "For Game Factory Kuluçka",
     description: "Hyper-Casual 3D Mobile Game",
