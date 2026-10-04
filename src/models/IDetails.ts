@@ -12,9 +12,10 @@ export interface IDetails {
   gifs: string[]
   whatILearned: string,
   gifsFooter: string[],
-  link: {
+  link?: {
     title: string,
     url: string,
   };
+  contactNote?: string;
   imageSrc: string;
 }

@@ -13,6 +13,10 @@
         <!--    GAME GIF-->
         <div class="relative">
           <img :alt="game.title" :src="game.src" class="w-full aspect-video">
+          <span v-if="game.conceptCover"
+              class="absolute top-3 right-3 md:top-4 md:right-4 px-2 py-0.5 text-[10px] md:text-xs tracking-wide uppercase rounded-md text-gray-200 bg-black/60">
+          Concept art
+        </span>
           <div
               class="flex items-center gap-6 justify-start px-5 absolute bottom-0 w-full bg-black bg-opacity-70 h-[15%] text-white">
             <p class="text-2xl md:text-4xl font-bold text-primary">
@@ -28,11 +32,19 @@
         <div class="bg-card p-6 flex-1 space-y-4 rounded-md ">
           <h2 class="text-2xl md:text-3xl font-semibold text-primary">About</h2>
           <p class="text-base md:text-lg leading-relaxed">{{ game.details.about }}</p>
-          <div class="link text-xs md:text-sm text-primary">
-            <a :href="game.details?.link?.url" target="_blank" rel="noopener noreferrer">{{ game.details?.link?.title }} 
-              <img :src="game.details.imageSrc" alt="" />  
+          <div v-if="game.details.link" class="link text-xs md:text-sm text-primary">
+            <a :href="game.details.link.url" target="_blank" rel="noopener noreferrer">{{ game.details.link.title }}
+              <img :src="game.details.imageSrc" alt="" />
             </a>
-        </div>
+          </div>
+          <div v-if="game.details.contactNote" class="flex flex-col sm:flex-row sm:items-center gap-3 p-4 rounded-lg bg-primary/10">
+            <p class="text-sm text-gray-300 flex-1">{{ game.details.contactNote }}</p>
+            <a href="mailto:oguzhan00yildiz@gmail.com"
+               class="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm text-primary bg-primary/10 hover:bg-primary/20 rounded-lg transition-all duration-300 shrink-0">
+              <Mail class="size-4"/>
+              Contact me
+            </a>
+          </div>
         </div>
         <!--      PROJECT INFO -->
         <div class="bg-card p-6 flex-1 space-y-4 rounded-md">
@@ -57,7 +69,12 @@
               <!--            ENGINE-->
               <li class="flex items-center gap-1 md:gap-3 text-base md:text-lg truncate">
                 <PencilRuler class="size-5 md:size-6"/>
-                Engine : {{ game.engine }}
+                Engine : {{ game.engine }} ({{ game.languages.join(", ") }})
+              </li>
+              <!--            PLATFORMS-->
+              <li class="flex items-center gap-1 md:gap-3 text-base md:text-lg truncate">
+                <MonitorSmartphone class="size-5 md:size-6"/>
+                Platforms : {{ game.platforms.join(", ") }}
               </li>
             </ul>
           </div>
@@ -119,7 +136,7 @@
 </template>
 
 <script lang="ts" setup>
-import {User, Users, Clock, PencilRuler, ChevronRight, ChevronLeft} from "lucide-vue-next";
+import {User, Users, Clock, PencilRuler, ChevronRight, ChevronLeft, MonitorSmartphone, Mail} from "lucide-vue-next";
 import {games} from "@/data/games";
 import {useRoute} from "vue-router";
 import type {IGame} from "@/models/IGame";

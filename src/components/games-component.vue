@@ -1,5 +1,18 @@
 <template>
-  <div class="space-y-16">
+  <div id="projects" class="space-y-16 scroll-mt-32">
+    <!--    ACTIVE SKILL FILTER-->
+    <div v-if="filter.active" class="flex flex-wrap items-center gap-3 -mb-8 text-sm">
+      <span class="text-gray-400">
+        Showing {{ filteredCount }} {{ filteredCount === 1 ? 'project' : 'projects' }} with
+      </span>
+      <span class="px-3 py-1 rounded-lg text-primary bg-primary/10">{{ filter.active }}</span>
+      <button type="button" @click="filter.clear()"
+              class="inline-flex items-center gap-1 px-3 py-1 rounded-lg text-gray-400 bg-white/5 hover:text-white hover:bg-white/10 transition-all duration-300">
+        <X class="size-4"/>
+        Clear filter
+      </button>
+    </div>
+
     <!--    SHIPPED PRODUCTS SECTION-->
     <div v-if="shippedGames.length > 0" class="animate-fadeIn">
       <div class="mb-8 pb-4 border-b-2 border-primary/50">
@@ -15,7 +28,7 @@
     </div>
 
     <!--    EDUCATION SECTION-->
-    <EducationComponent/>
+    <EducationComponent v-if="!filter.active"/>
 
     <!--    OTHER PRODUCTS SECTION-->
     <div v-if="otherGames.length > 0" class="animate-fadeIn">
@@ -44,11 +57,23 @@
 import CardElement from "@/components/card-element.vue";
 import EducationComponent from "@/components/education-component.vue";
 import {games} from "@/data/games";
-import {computed, ref} from "vue";
+import {computed, ref, watch} from "vue";
+import {X} from "lucide-vue-next";
+import {usesSkill, useSkillFilterStore} from "@/stores/skillFilter";
 
-const shippedGames = computed(() => games.filter(game => game.status === "Shipped"));
-const otherGames = computed(() => games.filter(game => game.status === "Other"));
+const filter = useSkillFilterStore();
+
+const visibleGames = computed(() =>
+  filter.active ? games.filter(game => usesSkill(game, filter.active!)) : games);
+const shippedGames = computed(() => visibleGames.value.filter(game => game.status === "Shipped"));
+const otherGames = computed(() => visibleGames.value.filter(game => game.status === "Other"));
+const filteredCount = computed(() => visibleGames.value.length);
 const showOtherProjects = ref(true);
+
+// Make sure filtered results aren't hidden in the collapsed section
+watch(() => filter.active, active => {
+  if (active) showOtherProjects.value = true;
+});
 
 </script>
 

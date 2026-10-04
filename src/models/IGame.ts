@@ -8,7 +8,11 @@ export interface IGame {
   users: number;
   createdAt: string;
   engine: string;
+  languages: string[];
+  platforms: string[];
   src: string;
+  // Cover is generated concept art rather than real gameplay footage
+  conceptCover?: boolean;
   role: string;
   status: "Shipped" | "Other";
   details: IDetails;

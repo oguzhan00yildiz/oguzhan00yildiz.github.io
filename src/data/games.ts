@@ -8,7 +8,9 @@ export const games: IGame[] = [
     description: "Local Co-Op Puzzle-Platformer Game",
     users: 6,
     createdAt: "3 Months",
-    engine: "Unity C#",
+    engine: "Unity",
+    languages: ["C#"],
+    platforms: ["PC"],
     src: "/gifs/labRATory.gif",
     role: "Lead Game Programmer / QA-Tester",
     status: "Shipped",
@@ -67,7 +69,9 @@ export const games: IGame[] = [
     description: "Online Multiplayer Shooter Game",
     users: 10,
     createdAt: "1 year",
-    engine: "Unity C#",
+    engine: "Unity",
+    languages: ["C#"],
+    platforms: ["PC"],
     src: "/gifs/slug5.gif",
     role: "Game Programmer / QA-Test Lead",
     status: "Shipped",
@@ -123,7 +127,9 @@ export const games: IGame[] = [
     description: "Hyper-Casual 3D Mobile Game",
     users: 3,
     createdAt: "6 Weeks",
-    engine: "Unity C#",
+    engine: "Unity",
+    languages: ["C#"],
+    platforms: ["Mobile"],
     src: "/gifs/Gunmergemaster.gif",
     role: "Game Programmer",
     status: "Shipped",
@@ -162,7 +168,7 @@ export const games: IGame[] = [
       imageSrc: "/img/playstore.png",
     },
   },
-  
+
   {
     id: "3",
     title: "Maiden Mystery / Kilpineidon Tarina",
@@ -170,7 +176,9 @@ export const games: IGame[] = [
     description: "Web-GL based Interactive Puzzle Game",
     users: 6,
     createdAt: "1-2 Months",
-    engine: "Unity C#",
+    engine: "Unity",
+    languages: ["C#"],
+    platforms: ["WebGL"],
     src: "/gifs/maidenmystery.gif",
     role: "Game Programmer / Publisher",
     status: "Other",
@@ -217,7 +225,9 @@ export const games: IGame[] = [
     description: "#BIT-Jam Project 2D Game",
     users: 5,
     createdAt: "48 Hours",
-    engine: "Unity C#",
+    engine: "Unity",
+    languages: ["C#"],
+    platforms: ["PC"],
     src: "/gifs/halloweenmadness.gif",
     role: "Game Programmer",
     status: "Other",
@@ -255,6 +265,7 @@ export const games: IGame[] = [
       imageSrc: "/img/itch.png",
     },
   },
+
   {
     id: "5",
     title: "Desktop Garden",
@@ -262,7 +273,9 @@ export const games: IGame[] = [
     description: "A desktop-overlay idle game where you nurture and grow plants",
     users: 5,
     createdAt: "1 Week",
-    engine: "Unity C#",
+    engine: "Unity",
+    languages: ["C#"],
+    platforms: ["PC", "WebGL"],
     src: "https://img.itch.zone/aW1hZ2UvNDI3NTkxNi8yNTk3ODcwMC5wbmc=/original/tEMPx1.png",
     role: "Lead Programmer / Product Owner",
     status: "Other",
@@ -320,7 +333,9 @@ export const games: IGame[] = [
     description: "#Godot Engine #GameJam 2D Game",
     users: 5,
     createdAt: "48 Hours",
-    engine: "Godot GDScript",
+    engine: "Godot",
+    languages: ["GDScript"],
+    platforms: ["PC"],
     src: "/gifs/hissipoika.gif",
     role: "Game Programmer",
     status: "Other",
@@ -359,7 +374,6 @@ export const games: IGame[] = [
     },
   },
 
-
   {
     id: "10",
     title: "Royal Banter Game-Jam Project",
@@ -367,7 +381,9 @@ export const games: IGame[] = [
     description: "#GlobalGameJam 3D Game",
     users: 8,
     createdAt: "48 Hours",
-    engine: "Unity C#",
+    engine: "Unity",
+    languages: ["C#"],
+    platforms: ["PC"],
     src: "/gifs/Royalbanter.gif",
     role: "Game Programmer",
     status: "Other",
@@ -414,7 +430,9 @@ export const games: IGame[] = [
     description: "Hyper-Casual 3D Mobile Game",
     users: 3,
     createdAt: "4 Weeks",
-    engine: "Unity C#",
+    engine: "Unity",
+    languages: ["C#"],
+    platforms: ["Mobile"],
     src: "/gifs/Clonemaster.gif",
     role: "Game Programmer",
     status: "Other",
@@ -453,6 +471,7 @@ export const games: IGame[] = [
       imageSrc: "/img/github.png",
     },
   },
+
   {
     id: "14",
     title: "Spin Of The Hill",
@@ -460,7 +479,9 @@ export const games: IGame[] = [
     description: "Base Defense 3D Game",
     users: 6,
     createdAt: "1 Week",
-    engine: "Unity C#",
+    engine: "Unity",
+    languages: ["C#"],
+    platforms: ["PC", "WebGL"],
     src: "/gifs/Spinofthehill.gif",
     role: "Game Programmer",
     status: "Other",
@@ -498,6 +519,7 @@ export const games: IGame[] = [
       imageSrc: "/img/itch.png"
   },
 },
+
   {
     id: "15",
     title: "Slice It All (Clone)",
@@ -505,7 +527,9 @@ export const games: IGame[] = [
     description: "Hyper-Casual 3D Mobile Game",
     users: 3,
     createdAt: "2 Weeks",
-    engine: "Unity C#",
+    engine: "Unity",
+    languages: ["C#"],
+    platforms: ["Mobile"],
     src: "/gifs/Sliceitall.gif",
     role: "Game Programmer",
     status: "Other",
@@ -551,7 +575,9 @@ export const games: IGame[] = [
     description: "#EXPA #GameJam Story-Puzzle 2D Game",
     users: 4,
     createdAt: "48 Hours",
-    engine: "Unity C#",
+    engine: "Unity",
+    languages: ["C#"],
+    platforms: ["PC"],
     src: "/gifs/Curebot.gif",
     role: "Game Programmer",
     status: "Other",
@@ -589,6 +615,7 @@ export const games: IGame[] = [
       imageSrc: "/img/itch.png",
     },
   },
+
   {
     id: "8",
     title: "Mob Control (Clone)",
@@ -596,7 +623,9 @@ export const games: IGame[] = [
     description: "Hyper-Casual 3D Mobile Game",
     users: 3,
     createdAt: "2 Weeks",
-    engine: "Unity C#",
+    engine: "Unity",
+    languages: ["C#"],
+    platforms: ["Mobile"],
     src: "/gifs/Mobcontrol.gif",
     role: "Game Programmer",
     status: "Other",
@@ -634,6 +663,7 @@ export const games: IGame[] = [
       imageSrc: "/img/github.png",
   },
 },
+
   {
     id: "9",
     title: "Coffee Stack (Clone)",
@@ -641,7 +671,9 @@ export const games: IGame[] = [
     description: "Hyper-Casual 3D Mobile Game",
     users: 3,
     createdAt: "2 Weeks",
-    engine: "Unity C#",
+    engine: "Unity",
+    languages: ["C#"],
+    platforms: ["Mobile"],
     src: "/gifs/Coffeestack.gif",
     role: "Game Programmer",
     status: "Other",
@@ -679,6 +711,7 @@ export const games: IGame[] = [
       imageSrc: "/img/github.png",
     },
   },
+
   {
     id: "11",
     title: "Tall Man Run (Clone)",
@@ -686,7 +719,9 @@ export const games: IGame[] = [
     description: "Hyper-Casual 3D Mobile Game",
     users: 3,
     createdAt: "2 Weeks",
-    engine: "Unity C#",
+    engine: "Unity",
+    languages: ["C#"],
+    platforms: ["Mobile"],
     src: "/gifs/Tallmanrun.gif",
     role: "Game Programmer", 
     status: "Other",
@@ -724,6 +759,7 @@ export const games: IGame[] = [
       imageSrc: "/img/github.png",
     },
   },
+
   {
     id: "12",
     title: "Atlas",
@@ -731,7 +767,9 @@ export const games: IGame[] = [
     description: "2D Tower Build Mobile Game",
     users: 1,
     createdAt: "1 Week",
-    engine: "Unity C#",
+    engine: "Unity",
+    languages: ["C#"],
+    platforms: ["Mobile"],
     src: "/gifs/Atlas.gif",
     role: "Game Programmer",
     status: "Other",
@@ -768,6 +806,244 @@ export const games: IGame[] = [
         url: "https://github.com/oguzhan00yildiz/Atlas-2D-Tower-Build-Mobile-Game",
       },
       imageSrc: "/img/github.png",
+    },
+  },
+
+  {
+    id: "17",
+    title: "Local AI-Driven NPCs",
+    subtitle: "Open-source Unity package on GitHub",
+    description: "Offline Voice-to-Voice AI NPC System for Unity",
+    users: 1,
+    createdAt: "8 Months",
+    engine: "Unity",
+    languages: ["C#"],
+    platforms: ["PC"],
+    src: "/img/ai-npcs-cover.jpg",
+    conceptCover: true,
+    role: "Solo Developer",
+    status: "Other",
+    details: {
+      about: "A plug-and-play, 100% on-device AI NPC system for Unity. Players walk up to an NPC and simply talk: their voice is transcribed, a local Large Language Model writes the reply in character, and the NPC answers out loud. No cloud APIs, no subscriptions and nothing leaves the player's computer.",
+      introduction: "I designed and built this system <strong>solo</strong> as an open-source Unity package. The goal was to make <strong>real-time, voice-driven NPC conversations</strong> work fully offline and to make adding them to any project take minutes. It combines a <strong>local LLM</strong> (llama.cpp via LLMUnity, supporting GGUF models such as Qwen, Llama, Mistral and Phi-3), <strong>Whisper</strong> speech-to-text and <strong>Piper</strong> neural text-to-speech into one decoupled, event-driven architecture.",
+      workCategories: [
+        {
+          category: "AI Pipeline",
+          items: [
+            "<strong>Voice-to-voice loop</strong>: microphone → Whisper STT → streaming LLM reply → Piper TTS",
+            "Real-time <strong>voice activity detection</strong> and silence handling",
+            "Streaming responses split into sentences and spoken as they arrive for <strong>low latency</strong>",
+            "Model warm-up and <strong>GPU acceleration</strong> toggles for smooth runtime performance",
+          ]
+        },
+        {
+          category: "Architecture & Developer Experience",
+          items: [
+            "Decoupled services (<strong>AISystemManager</strong>, VoiceInput/VoiceOutput services, <strong>NPCAgent</strong>) that auto-bind at runtime",
+            "<strong>ScriptableObject personality presets</strong> for NPC identity, backstory and voice",
+            "Public <strong>C# API</strong> to trigger conversations, LLM queries and speech from gameplay code",
+            "Works with both the <strong>New Input System</strong> and the legacy Input Manager",
+          ]
+        },
+        {
+          category: "Tooling & Distribution",
+          items: [
+            "Distributed as a <strong>UPM package</strong> installable from a Git URL",
+            "<strong>One-click installer</strong> that resolves dependencies and configures package registries",
+            "Editor window that <strong>downloads and assigns models</strong> automatically",
+            "Editor tools for browsing voices and checking system and GPU health",
+          ]
+        },
+      ],
+      gifs: [],
+      whatILearned: "• Running <strong>LLM, speech-to-text and text-to-speech models locally</strong> inside a game engine\n\n• Designing a <strong>modular, event-driven architecture</strong> that other developers can drop into their projects\n\n• Building <strong>editor tooling</strong> and a package installer that makes complex setup feel effortless\n\n• Balancing response quality against <strong>latency and hardware limits</strong> on consumer PCs",
+      gifsFooter: [],
+      link: {
+        title: "",
+        url: "https://github.com/oguzhan00yildiz/Unity-Local-AI-Driven-NPCs",
+      },
+      imageSrc: "/img/github.png",
+    },
+  },
+
+  {
+    id: "16",
+    title: "PS5 Devkit Jousting Prototype",
+    subtitle: "JAMK course project on PS5 devkit",
+    description: "Local Multiplayer Physics-Based Jousting Prototype",
+    users: 3,
+    createdAt: "3 Months",
+    engine: "Unity",
+    languages: ["C#"],
+    platforms: ["PS5"],
+    src: "/img/ps5-jousting-cover.jpg",
+    conceptCover: true,
+    role: "Gameplay Programmer",
+    status: "Other",
+    details: {
+      about: "A local multiplayer jousting prototype where players charge at each other on horseback in an arena, aiming their lances and blocking with shields. Hits are physics-driven, knocking riders off their horses into ragdolls.",
+      introduction: "This prototype was built as a <strong>JAMK course project</strong> with access to a <strong>PS5 devkit</strong>. Over about three months our team of three built and tested the game on console hardware. I worked as a <strong>Gameplay Programmer</strong>, focusing on the horse and rider, the combat mechanics, and the physics reactions that make each hit feel impactful. Alongside the core game, we experimented with console features such as <strong>DualSense haptic feedback</strong> and controller vibration.",
+      workCategories: [
+        {
+          category: "Horse & Rider",
+          items: [
+            "Set up the horse and rider with walking and running <strong>animations</strong>",
+            "Matched running speed to the animation for grounded movement",
+            "<strong>Upper-body aiming</strong> so the rider can point the lance independently of the horse",
+          ]
+        },
+        {
+          category: "Combat Mechanics",
+          items: [
+            "<strong>Lancing</strong> system with hit detection and damage",
+            "<strong>Shield system</strong> with its own health that blocks lance hits and breaks",
+            "Physics <strong>force on impact</strong> and <strong>ragdoll</strong> spawning with lance and shield",
+          ]
+        },
+        {
+          category: "Console Experimentation",
+          items: [
+            "Tested and played the game on <strong>PS5 devkit</strong> hardware",
+            "Experimented with <strong>DualSense haptics</strong> and vibration feedback",
+            "Local multiplayer with controller input",
+          ]
+        },
+      ],
+      gifs: [],
+      whatILearned: "• Developing and testing a game on <strong>console hardware</strong>\n\n• Using <strong>haptic feedback</strong> to make gameplay feel more physical\n\n• Combining animation, IK-style aiming and <strong>ragdoll physics</strong> into one combat loop",
+      gifsFooter: [],
+      contactNote: "Footage from this project isn't public. If you're interested, feel free to contact me and I can share gameplay footage and more details.",
+      imageSrc: "",
+    },
+  },
+
+  {
+    id: "18",
+    title: "AR Mystery",
+    subtitle: "Augmented reality escape-room puzzle",
+    description: "AR Puzzle Game for Android",
+    users: 1,
+    createdAt: "1 Month",
+    engine: "Unity",
+    languages: ["C#"],
+    platforms: ["Mobile", "AR / VR"],
+    src: "/img/ar-mystery-cover.jpg",
+    conceptCover: true,
+    role: "Solo Developer",
+    status: "Other",
+    details: {
+      about: "AR Mystery is an augmented reality puzzle game that places a mysterious living room into the player's real surroundings. Players explore the room through their phone, inspect objects and connect clues to crack the final safe.",
+      introduction: "I built AR Mystery <strong>solo</strong> in Unity 6 using <strong>AR Foundation</strong> and <strong>ARCore</strong> for Android. I handled everything from the level design of the room to the interaction systems and puzzle flow.",
+      workCategories: [
+        {
+          category: "AR & Interaction",
+          items: [
+            "<strong>AR Foundation / ARCore</strong> setup for placing the scene in the real world",
+            "Touch-based <strong>object interaction</strong> for inspecting items in AR",
+            "Input and UI managers adapted for mobile AR",
+          ]
+        },
+        {
+          category: "Puzzle & Level Design",
+          items: [
+            "Designed the <strong>living room</strong> environment and clue layout",
+            "Puzzle chain with a <strong>painting</strong>, a <strong>clock</strong> and a <strong>combination safe</strong>",
+            "Win flow and game restart",
+          ]
+        },
+      ],
+      gifs: [],
+      whatILearned: "• Building games with <strong>AR Foundation and ARCore</strong>\n\n• Designing puzzles that make players physically <strong>move around and look closer</strong>\n\n• Adapting interaction and UI for <strong>handheld AR</strong>",
+      gifsFooter: [],
+      contactNote: "This project's repository is private. If you're interested, feel free to contact me and I can share footage and more details.",
+      imageSrc: "",
+    },
+  },
+
+  {
+    id: "19",
+    title: "Zombie Base Defense",
+    subtitle: "Unreal Engine 5 prototype",
+    description: "Base Defense Game built with Blueprints",
+    users: 1,
+    createdAt: "3 Months",
+    engine: "Unreal Engine",
+    languages: ["Blueprints"],
+    platforms: ["PC"],
+    src: "/img/unreal-defense-cover.jpg",
+    conceptCover: true,
+    role: "Solo Developer",
+    status: "Other",
+    details: {
+      about: "A base defense prototype where waves of zombies push toward the player's base. Killing zombies earns money that can be spent on turrets placed in base slots, and the game ends when the base falls.",
+      introduction: "I built this prototype <strong>solo</strong> in <strong>Unreal Engine 5.5</strong> using <strong>Blueprints</strong> to learn Unreal's workflow coming from a Unity background. It covers a full gameplay loop from combat and economy to UI and game over.",
+      workCategories: [
+        {
+          category: "Gameplay",
+          items: [
+            "Zombie enemies with <strong>health</strong> and on-screen health text",
+            "<strong>Economy</strong>: money awarded on each zombie kill",
+            "<strong>Turret slots</strong> around the base",
+            "<strong>Base health</strong> and game over state",
+          ]
+        },
+        {
+          category: "UI & Levels",
+          items: [
+            "Score and money <strong>UI</strong>",
+            "Level design for the defense arena",
+          ]
+        },
+      ],
+      gifs: [],
+      whatILearned: "• Working in <strong>Unreal Engine 5</strong> and its <strong>Blueprint</strong> visual scripting\n\n• Translating gameplay patterns I knew from Unity into Unreal's <strong>actor and component</strong> model\n\n• Building a complete loop of <strong>combat, economy and progression</strong>",
+      gifsFooter: [],
+      contactNote: "This project's repository is private. If you're interested, feel free to contact me and I can share footage and more details.",
+      imageSrc: "",
+    },
+  },
+
+  {
+    id: "20",
+    title: "Discord → Jira Bot",
+    subtitle: "Team workflow automation tool",
+    description: "Python Bot that Turns Discord Reports into Jira Tickets",
+    users: 2,
+    createdAt: "1 Month",
+    engine: "discord.py",
+    languages: ["Python"],
+    platforms: ["Discord"],
+    src: "/img/discord-jira-bot-cover.jpg",
+    conceptCover: true,
+    role: "Tools Programmer",
+    status: "Other",
+    details: {
+      about: "A Discord bot that connects a game team's Discord server to Jira. Bug reports and tasks posted in Discord channels are automatically turned into Jira tickets and moved onto the team's board, so nothing gets lost in chat.",
+      introduction: "I built this tool to <strong>speed up our team's bug reporting</strong> workflow. Instead of copying messages into Jira by hand, the bot listens to Discord channels and creates and transitions tickets automatically. It is written in <strong>Python</strong> with <strong>discord.py</strong> and the <strong>Jira API</strong>, and runs in <strong>Docker</strong>.",
+      workCategories: [
+        {
+          category: "Automation",
+          items: [
+            "Creates <strong>Jira tickets</strong> from Discord messages",
+            "Detects the <strong>work type</strong> from the message (Bug by default)",
+            "Attaches linked <strong>video footage</strong> to tickets",
+            "Moves new tickets onto the <strong>Kanban board</strong> automatically",
+          ]
+        },
+        {
+          category: "Deployment",
+          items: [
+            "<strong>Docker / Docker Compose</strong> setup for running on a server",
+            "Configuration through <strong>environment variables</strong>",
+            "Automated tests for the bot logic",
+          ]
+        },
+      ],
+      gifs: [],
+      whatILearned: "• Integrating <strong>third-party APIs</strong> (Discord and Jira) into one workflow\n\n• Building <strong>tools that save a team time</strong> every day\n\n• Packaging and deploying a service with <strong>Docker</strong>",
+      gifsFooter: [],
+      contactNote: "This project's repository is private. If you're interested, feel free to contact me and I can share more details.",
+      imageSrc: "",
     },
   },
 
