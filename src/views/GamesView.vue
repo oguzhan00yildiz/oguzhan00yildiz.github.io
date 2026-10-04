@@ -10,9 +10,9 @@
     <div v-if="game" class="flex flex-col gap-3 md:gap-4">
       <!--  GAME SECTION -->
       <div>
-        <!--    GAME GIF-->
+        <!--    GAME MEDIA-->
         <div class="relative">
-          <img :alt="game.title" :src="game.src" class="w-full aspect-video">
+          <MediaElement :src="game.src" :alt="`${game.title} gameplay`" class="w-full aspect-video object-cover"/>
           <span v-if="game.conceptCover"
               class="absolute top-3 right-3 md:top-4 md:right-4 px-2 py-0.5 text-[10px] md:text-xs tracking-wide uppercase rounded-md text-gray-200 bg-black/60">
           Concept art
@@ -52,28 +52,28 @@
           <div class="flex flex-col gap-2 md:gap-4">
             <ul class="space-y-3">
               <!--            ROLE-->
-              <li class="flex items-center gap-1 md:gap-3 text-base md:text-lg truncate">
-                <User class="size-5 md:size-6"/>
+              <li class="flex items-start gap-2 md:gap-3 text-base md:text-lg">
+                <User class="size-5 md:size-6 shrink-0 mt-1"/>
                 Role : {{ game.role }}
               </li>
               <!--            TEAM SIZE-->
-              <li class="flex items-center gap-1 md:gap-3 text-base md:text-lg truncate">
-                <Users class="size-5 md:size-6"/>
+              <li class="flex items-start gap-2 md:gap-3 text-base md:text-lg">
+                <Users class="size-5 md:size-6 shrink-0 mt-1"/>
                 Team Size : {{ game.users }}
               </li>
               <!--            TIME FRAME-->
-              <li class="flex items-center gap-1 md:gap-3 text-base md:text-lg truncate">
-                <Clock class="size-5 md:size-6"/>
+              <li class="flex items-start gap-2 md:gap-3 text-base md:text-lg">
+                <Clock class="size-5 md:size-6 shrink-0 mt-1"/>
                 Time frame : {{ game.createdAt }}
               </li>
               <!--            ENGINE-->
-              <li class="flex items-center gap-1 md:gap-3 text-base md:text-lg truncate">
-                <PencilRuler class="size-5 md:size-6"/>
+              <li class="flex items-start gap-2 md:gap-3 text-base md:text-lg">
+                <PencilRuler class="size-5 md:size-6 shrink-0 mt-1"/>
                 Engine : {{ game.engine }} ({{ game.languages.join(", ") }})
               </li>
               <!--            PLATFORMS-->
-              <li class="flex items-center gap-1 md:gap-3 text-base md:text-lg truncate">
-                <MonitorSmartphone class="size-5 md:size-6"/>
+              <li class="flex items-start gap-2 md:gap-3 text-base md:text-lg">
+                <MonitorSmartphone class="size-5 md:size-6 shrink-0 mt-1"/>
                 Platforms : {{ game.platforms.join(", ") }}
               </li>
             </ul>
@@ -111,10 +111,9 @@
         <p v-else class="text-base md:text-lg leading-relaxed whitespace-pre-line rich-content" v-html="game.details.whatIWorkedOn"></p>
       </div>
 
-      <!--    GIFS-->
-      <div v-if="game.details.gifs.length"
-           :class="game.id === '0' ? 'grid grid-cols-1 md:grid-cols-2 grid-flow-row auto-rows-fr gap-4' : 'grid grid-cols-1 md:grid-cols-2 grid-flow-row auto-rows-fr gap-4'">
-        <img v-for="gif in game.details.gifs" :src="gif" alt="game-gif" class="rounded-md w-full h-auto object-contain">
+      <!--    MEDIA-->
+      <div v-if="game.details.gifs.length" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <MediaElement v-for="gif in game.details.gifs" :key="gif" :src="gif" :alt="`${game.title} gameplay`" class="rounded-md w-full h-auto object-contain"/>
       </div>
 
       <!--    WHAT I LEARNED-->
@@ -124,11 +123,10 @@
       </div>
 
 
-      <!--    FOOTER GIFS-->
-      <div
-          :class="game.id === '0' ? 'grid grid-cols-1 md:grid-cols-2 grid-flow-row auto-rows-fr gap-4' : 'grid grid-cols-1 md:grid-cols-2 grid-flow-row auto-rows-fr gap-4'">
-        <img v-for="gif in game.details.gifsFooter" :src="gif" alt="game-gif"
-             class="rounded-md w-full h-auto object-contain">
+      <!--    FOOTER MEDIA-->
+      <div v-if="game.details.gifsFooter.length" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <MediaElement v-for="gif in game.details.gifsFooter" :key="gif" :src="gif" :alt="`${game.title} gameplay`"
+                      class="rounded-md w-full h-auto object-contain"/>
       </div>
     </div>
 
@@ -138,6 +136,7 @@
 <script lang="ts" setup>
 import {User, Users, Clock, PencilRuler, ChevronRight, ChevronLeft, MonitorSmartphone, Mail} from "lucide-vue-next";
 import {games} from "@/data/games";
+import MediaElement from "@/components/media-element.vue";
 import {useRoute} from "vue-router";
 import type {IGame} from "@/models/IGame";
 import {computed, ref, watch, onMounted} from "vue";

@@ -5,6 +5,8 @@
         <HeroComponent/>
         <!--    MY PROJECTS-->
         <GamesComponent/>
+        <!--    EDUCATION-->
+        <EducationComponent class="mt-10"/>
 
         <!-- About & Connect (always at bottom) -->
         <section class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-10">
@@ -28,28 +30,28 @@
               I'm always interested in discussing game development, programming challenges, and creative projects. Feel free to reach out!
             </p>
             <div class="flex flex-wrap gap-3">
-              <a href="https://www.linkedin.com/in/oguzhan00yildiz/" target="_blank"
+              <a href="https://www.linkedin.com/in/oguzhan00yildiz/" target="_blank" rel="noopener noreferrer"
                  class="inline-flex items-center gap-2 px-4 py-2 text-sm text-gray-400 hover:text-primary bg-primary/10 hover:bg-primary/20 rounded-lg transition-all duration-300">
                 <i class="fa-brands fa-linkedin"></i>
                 <span>LinkedIn</span>
               </a>
-              <a href="https://github.com/oguzhan00yildiz" target="_blank"
+              <a href="https://github.com/oguzhan00yildiz" target="_blank" rel="noopener noreferrer"
                  class="inline-flex items-center gap-2 px-4 py-2 text-sm text-gray-400 hover:text-secondary bg-secondary/10 hover:bg-secondary/20 rounded-lg transition-all duration-300">
                 <i class="fa-brands fa-github"></i>
                 <span>GitHub</span>
               </a>
-              <a href="https://www.instagram.com/oguzhan0yildiz/" target="_blank"
-                 class="inline-flex items-center gap-2 px-4 py-2 text-sm text-gray-400 hover:text-pink-400 bg-pink-500/10 hover:bg-pink-500/20 rounded-lg transition-all duration-300">
+              <a href="https://www.instagram.com/oguzhan0yildiz/" target="_blank" rel="noopener noreferrer"
+                 class="inline-flex items-center gap-2 px-4 py-2 text-sm text-gray-400 hover:text-secondary bg-secondary/10 hover:bg-secondary/20 rounded-lg transition-all duration-300">
                 <i class="fa-brands fa-instagram"></i>
                 <span>Instagram</span>
               </a>
               <a href="mailto:oguzhan00yildiz@gmail.com"
-                 class="inline-flex items-center gap-2 px-4 py-2 text-sm text-gray-400 hover:text-green-400 bg-green-500/10 hover:bg-green-500/20 rounded-lg transition-all duration-300">
+                 class="inline-flex items-center gap-2 px-4 py-2 text-sm text-gray-400 hover:text-accent bg-accent/10 hover:bg-accent/20 rounded-lg transition-all duration-300">
                 <i class="fa-solid fa-envelope"></i>
                 <span>Email</span>
               </a>
-              <a href="https://oguzhan00yildiz.itch.io/" target="_blank"
-                 class="inline-flex items-center gap-2 px-4 py-2 text-sm text-gray-400 hover:text-red-400 bg-red-500/10 hover:bg-red-500/20 rounded-lg transition-all duration-300">
+              <a href="https://oguzhan00yildiz.itch.io/" target="_blank" rel="noopener noreferrer"
+                 class="inline-flex items-center gap-2 px-4 py-2 text-sm text-gray-400 hover:text-primary bg-primary/10 hover:bg-primary/20 rounded-lg transition-all duration-300">
                 <i class="fa-brands fa-itch-io"></i>
                 <span>Itch.io</span>
               </a>
@@ -63,4 +65,5 @@
 <script lang="ts" setup>
 import HeroComponent from "@/components/hero-component.vue";
 import GamesComponent from "@/components/games-component.vue";
+import EducationComponent from "@/components/education-component.vue";
 </script>

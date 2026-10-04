@@ -1,17 +1,15 @@
 <template>
   <div class="flex flex-col md:flex-row items-center gap-8 pt-2 pb-2 md:gap-12">
     <div class="flex-shrink-0 size-[140px] md:size-[180px] overflow-hidden ring-3 ring-secondary rounded-full">
-      <button @click="handleImageClick">
-        <img alt="avatar"
-             ref="imageAvatar"
-             class="size-full object-cover transition-transform duration-200 scale-150 translate-y-6"
-             src="/img/avatar.jpg">
-      </button>
+      <img alt="Portrait of Oguzhan Yildiz"
+           class="size-full object-cover scale-150 translate-y-6"
+           src="/img/avatar.jpg">
     </div>
     <div class="flex flex-col items-center md:items-start gap-4 flex-1">
-      <p
-        class="text-lg md:text-2xl text-center md:text-left text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text font-light">
-        Also known as Ossi, a Game Production student at JAMK University with 6+ years of game programming experience. Passionate about crafting immersive gameplay experiences and solving complex technical challenges.
+      <p class="text-base md:text-xl text-center md:text-left text-gray-300 leading-relaxed max-w-3xl">
+        Also known as <span class="text-white font-medium">Ossi</span>. I'm a game programmer with 6+ years of experience,
+        studying Game Production at JAMK University in Finland. I've shipped games on Steam and Google Play,
+        co-founded a game studio, and enjoy building gameplay systems, multiplayer features and developer tools.
       </p>
       <!-- Tech stack -->
       <div class="flex flex-col items-center md:items-start gap-2 mt-2">
@@ -41,7 +39,6 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
 import { games } from '@/data/games'
 import { usesSkill, useSkillFilterStore } from '@/stores/skillFilter'
 
@@ -93,17 +90,4 @@ const skillGroups = [
   },
 ]
 
-const imageAvatar = ref<HTMLImageElement | null>(null)
-
-const handleImageClick = () => {
-  if (imageAvatar.value) {
-    imageAvatar.value.classList.add('scale-150')
-    imageAvatar.value.classList.add('translate-y-6')
-  } else {
-    console.warn('Image element not found.')
-  }
-}
 </script>
-
-<style scoped>
-</style>

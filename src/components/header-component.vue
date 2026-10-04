@@ -21,17 +21,17 @@
           Download CV
         </a>
         <div class="grid grid-cols-2 gap-2 text-secondary items-center md:flex md:gap-3">
-          <a href="https://www.linkedin.com/in/oguzhan00yildiz/" target="_blank" aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin text-2xl md:text-5xl leading-none hover:text-white transition-colors duration-150"></i>
+          <a href="https://www.linkedin.com/in/oguzhan00yildiz/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin text-2xl md:text-3xl leading-none hover:text-white transition-colors duration-150"></i>
           </a>
-          <a href="https://github.com/oguzhan00yildiz" target="_blank" aria-label="GitHub">
-            <i class="fa-brands fa-github text-2xl md:text-5xl leading-none hover:text-white transition-colors duration-150"></i>
+          <a href="https://github.com/oguzhan00yildiz" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fa-brands fa-github text-2xl md:text-3xl leading-none hover:text-white transition-colors duration-150"></i>
           </a>
-          <a href="https://www.instagram.com/oguzhan0yildiz/" target="_blank" aria-label="Instagram">
-            <i class="fa-brands fa-instagram text-2xl md:text-5xl leading-none hover:text-white transition-colors duration-150"></i>
+          <a href="https://www.instagram.com/oguzhan0yildiz/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fa-brands fa-instagram text-2xl md:text-3xl leading-none hover:text-white transition-colors duration-150"></i>
           </a>
-          <a href="https://oguzhan00yildiz.itch.io/" target="_blank" aria-label="Itch.io">
-            <i class="fa-brands fa-itch-io text-2xl md:text-5xl leading-none hover:text-white transition-colors duration-150"></i>
+          <a href="https://oguzhan00yildiz.itch.io/" target="_blank" rel="noopener noreferrer" aria-label="Itch.io">
+            <i class="fa-brands fa-itch-io text-2xl md:text-3xl leading-none hover:text-white transition-colors duration-150"></i>
           </a>
         </div>
       </div>

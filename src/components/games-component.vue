@@ -17,18 +17,15 @@
     <div v-if="shippedGames.length > 0" class="animate-fadeIn">
       <div class="mb-8 pb-4 border-b-2 border-primary/50">
         <h2 class="text-transparent bg-gradient-to-r from-primary inline-flex items-center gap-3 to-secondary bg-clip-text text-2xl md:text-3xl font-bold">
-          <span class="text-2xl">🚀</span>
+          <Rocket class="size-6 md:size-7 text-primary shrink-0"/>
           Shipped Products
         </h2>
-        <p class="text-gray-400 text-sm md:text-base mt-2">Games published and released to the world</p>
+        <p class="text-gray-400 text-sm md:text-base mt-2">Games released on Steam and Google Play</p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-row auto-rows-fr gap-6">
-        <card-element v-for="(game, index) in shippedGames" :key="index" :game="game"/>
+        <card-element v-for="game in shippedGames" :key="game.id" :game="game"/>
       </div>
     </div>
-
-    <!--    EDUCATION SECTION-->
-    <EducationComponent v-if="!filter.active"/>
 
     <!--    OTHER PRODUCTS SECTION-->
     <div v-if="otherGames.length > 0" class="animate-fadeIn">
@@ -37,17 +34,16 @@
         class="w-full mb-8 pb-4 border-b-2 border-accent/50 hover:border-accent transition-all duration-300 text-left group">
         <div class="flex items-center gap-2">
           <h2 class="text-transparent bg-gradient-to-r from-accent inline-flex items-center gap-3 to-secondary bg-clip-text text-2xl md:text-3xl font-bold group-hover:from-secondary group-hover:to-accent transition-all duration-300">
-            <span class="text-2xl">📦</span>
+            <Boxes class="size-6 md:size-7 text-accent shrink-0"/>
             Other Projects
           </h2>
-          <p class="text-gray-400 text-sm md:text-base group-hover:text-accent transition-colors duration-300">
-            {{ showOtherProjects ? '▼' : '▶' }}
-          </p>
+          <ChevronDown class="size-5 text-gray-400 group-hover:text-accent transition-all duration-300"
+                       :class="showOtherProjects ? '' : '-rotate-90'"/>
         </div>
-        <p class="text-gray-400 text-xs md:text-sm mt-2 opacity-70">Game jam entries, clones, and learning projects</p>
+        <p class="text-gray-400 text-xs md:text-sm mt-2 opacity-70">Prototypes, game jam entries, tools and course projects</p>
       </button>
       <div v-if="showOtherProjects" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-row auto-rows-fr gap-6">
-        <card-element v-for="(game, index) in otherGames" :key="index" :game="game"/>
+        <card-element v-for="game in otherGames" :key="game.id" :game="game"/>
       </div>
     </div>
   </div>
@@ -55,10 +51,9 @@
 
 <script lang="ts" setup>
 import CardElement from "@/components/card-element.vue";
-import EducationComponent from "@/components/education-component.vue";
 import {games} from "@/data/games";
 import {computed, ref, watch} from "vue";
-import {X} from "lucide-vue-next";
+import {Boxes, ChevronDown, Rocket, X} from "lucide-vue-next";
 import {usesSkill, useSkillFilterStore} from "@/stores/skillFilter";
 
 const filter = useSkillFilterStore();
